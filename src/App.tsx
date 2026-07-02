@@ -11,6 +11,8 @@ import { SafetyDashboard } from "@/pages/SafetyDashboard";
 import { MachineHealthDashboard } from "@/pages/MachineHealthDashboard";
 import { EnvironmentDashboard } from "@/pages/EnvironmentDashboard";
 import { HseDashboard } from "@/pages/HseDashboard";
+import { ProductionOpsDashboard } from "@/pages/ProductionOpsDashboard";
+import { EnergyUtilitiesDashboard } from "@/pages/EnergyUtilitiesDashboard";
 
 export default function App() {
   return (
@@ -29,6 +31,8 @@ export default function App() {
             <Route path="/d/quality" element={<QualityDashboard />} />
             <Route path="/d/maintenance" element={<MaintenanceDashboard />} />
             <Route path="/d/hse" element={<HseDashboard />} />
+            <Route path="/d/production-ops" element={<ProductionOpsDashboard />} />
+            <Route path="/d/energy-utilities" element={<EnergyUtilitiesDashboard />} />
             <Route path="*" element={<Navigate to="/d/overview" replace />} />
           </Route>
         </Routes>

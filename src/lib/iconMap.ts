@@ -12,6 +12,7 @@ import {
   Cloud,
   Cpu,
   Droplets,
+  Flame,
   FlaskConical,
   Gauge,
   GraduationCap,
@@ -99,4 +100,5 @@ export const ICONS: Record<string, LucideIcon> = {
   leaf: Leaf,
   trash: Trash2,
   sun: Sun,
+  flame: Flame,
 };
