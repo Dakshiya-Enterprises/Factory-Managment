@@ -9,7 +9,7 @@ interface GaugeStatProps {
 /** Semi-circular gauge (needle style), used for the availability-vs-target dial. */
 export function GaugeStat({ value, max = 100, target, label, size = 170 }: GaugeStatProps) {
   const pct = Math.min(value / max, 1);
-  const angle = -90 + pct * 180;
+  const angle = -180 + pct * 180;
   const r = size / 2 - 14;
   const cx = size / 2;
   const cy = size / 2;
@@ -32,11 +32,10 @@ export function GaugeStat({ value, max = 100, target, label, size = 170 }: Gauge
         {arcSegments.map((seg) => {
           const start = polar(seg.from);
           const end = polar(seg.to);
-          const largeArc = seg.to - seg.from > 0.5 ? 1 : 0;
           return (
             <path
               key={seg.color}
-              d={`M ${start.x} ${start.y} A ${r} ${r} 0 ${largeArc} 1 ${end.x} ${end.y}`}
+              d={`M ${start.x} ${start.y} A ${r} ${r} 0 0 1 ${end.x} ${end.y}`}
               stroke={seg.color}
               strokeWidth={12}
               fill="none"
