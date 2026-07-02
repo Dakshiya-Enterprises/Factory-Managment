@@ -76,7 +76,7 @@ export function ProductionOpsDashboard() {
               <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
               <XAxis dataKey="x" tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} width={34} />
-              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12 }} />
+              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12, background: "var(--color-surface)", color: "var(--color-navy-950)" }} />
               <Legend wrapperStyle={{ fontSize: 10 }} />
               <Line type="monotone" dataKey="target" name="Target (MT)" stroke="#9aa5b8" strokeDasharray="4 4" strokeWidth={1.5} dot={false} />
               <Line type="monotone" dataKey="actual" name="Actual (MT)" stroke="var(--color-status-good)" strokeWidth={2.25} dot={{ r: 3 }} />
@@ -89,7 +89,7 @@ export function ProductionOpsDashboard() {
               <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
               <XAxis dataKey="x" tick={{ fontSize: 9.5, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} width={34} />
-              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12 }} cursor={{ fill: "var(--color-page)" }} />
+              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12, background: "var(--color-surface)", color: "var(--color-navy-950)" }} cursor={{ fill: "var(--color-page)" }} />
               <Bar dataKey="y" fill="var(--color-status-good)" radius={[6, 6, 0, 0]} maxBarSize={26} />
             </BarChart>
           </ResponsiveContainer>
@@ -100,7 +100,7 @@ export function ProductionOpsDashboard() {
               <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
               <XAxis dataKey="x" tick={{ fontSize: 9, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} width={34} />
-              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12 }} />
+              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12, background: "var(--color-surface)", color: "var(--color-navy-950)" }} />
               <Legend wrapperStyle={{ fontSize: 10 }} />
               <Line type="monotone" dataKey="target" name="Target" stroke="var(--color-brand-blue)" strokeWidth={2.25} dot={{ r: 3 }} />
               <Line type="monotone" dataKey="actual" name="Actual" stroke="var(--color-status-good)" strokeWidth={2.25} dot={{ r: 3 }} />
@@ -116,7 +116,7 @@ export function ProductionOpsDashboard() {
               <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
               <XAxis dataKey="x" tick={{ fontSize: 9.5, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} width={30} />
-              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12 }} cursor={{ fill: "var(--color-page)" }} />
+              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12, background: "var(--color-surface)", color: "var(--color-navy-950)" }} cursor={{ fill: "var(--color-page)" }} />
               <Bar dataKey="y" fill="var(--color-status-good)" radius={[6, 6, 0, 0]} maxBarSize={26} />
             </BarChart>
           </ResponsiveContainer>
@@ -130,7 +130,7 @@ export function ProductionOpsDashboard() {
               <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
               <XAxis dataKey="x" tick={{ fontSize: 9.5, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} width={30} />
-              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12 }} />
+              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12, background: "var(--color-surface)", color: "var(--color-navy-950)" }} />
               <Line type="monotone" dataKey="y" stroke="var(--color-status-bad)" strokeWidth={2.25} dot={{ r: 3 }} />
             </LineChart>
           </ResponsiveContainer>

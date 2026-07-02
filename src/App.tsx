@@ -13,6 +13,7 @@ import { EnvironmentDashboard } from "@/pages/EnvironmentDashboard";
 import { HseDashboard } from "@/pages/HseDashboard";
 import { ProductionOpsDashboard } from "@/pages/ProductionOpsDashboard";
 import { EnergyUtilitiesDashboard } from "@/pages/EnergyUtilitiesDashboard";
+import { SettingsPage } from "@/pages/SettingsPage";
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
             <Route path="/d/hse" element={<HseDashboard />} />
             <Route path="/d/production-ops" element={<ProductionOpsDashboard />} />
             <Route path="/d/energy-utilities" element={<EnergyUtilitiesDashboard />} />
+            <Route path="/settings" element={<SettingsPage />} />
             <Route path="*" element={<Navigate to="/d/overview" replace />} />
           </Route>
         </Routes>

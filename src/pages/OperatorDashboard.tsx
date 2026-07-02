@@ -69,7 +69,7 @@ export function OperatorDashboard() {
                       <span className="truncate text-[var(--color-navy-900)]">{row.label}</span>
                       <span className="font-bold text-[var(--color-navy-950)]">{row.value} / {row.max}</span>
                     </div>
-                    <div className="mt-0.5 h-1.5 w-full overflow-hidden rounded-full bg-slate-100">
+                    <div className="mt-0.5 h-1.5 w-full overflow-hidden rounded-full bg-[var(--color-track)]">
                       <div className="h-full rounded-full bg-[var(--color-brand-blue)]" style={{ width: `${(row.value / row.max) * 100}%` }} />
                     </div>
                   </li>
@@ -104,7 +104,7 @@ export function OperatorDashboard() {
               <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
               <XAxis dataKey="x" tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} width={30} />
-              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12 }} />
+              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12, background: "var(--color-surface)", color: "var(--color-navy-950)" }} />
               <Legend wrapperStyle={{ fontSize: 11 }} />
               <Line type="monotone" dataKey="efficiency" name="Efficiency (%)" stroke="var(--color-brand-blue)" strokeWidth={2.25} dot={{ r: 3 }} />
               <Line type="monotone" dataKey="target" name="Target (%)" stroke="var(--color-status-good)" strokeDasharray="4 4" strokeWidth={1.5} dot={false} />

@@ -15,7 +15,7 @@ export function Topbar({ order, title, subtitle, lastUpdated }: TopbarProps) {
   const timeStr = now.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: true });
 
   return (
-    <header className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--color-border)] bg-white px-6 py-3.5">
+    <header className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--color-border)] bg-[var(--color-surface)] px-6 py-3.5">
       <div className="flex items-center gap-3">
         <span className="rounded-md bg-[var(--color-status-info-bg)] px-2 py-1 text-[11px] font-bold text-[var(--color-status-info)]">
           DASHBOARD {order} OF {TOTAL_DASHBOARDS}

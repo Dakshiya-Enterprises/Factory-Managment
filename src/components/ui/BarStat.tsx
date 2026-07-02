@@ -10,7 +10,7 @@ export function BarStat({ data, color = "var(--color-brand-blue)", unit = "", he
         <YAxis tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} width={34} />
         <Tooltip
           formatter={(value: number) => [`${value}${unit}`, ""]}
-          contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12 }}
+          contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12, background: "var(--color-surface)", color: "var(--color-navy-950)" }}
           cursor={{ fill: "var(--color-page)" }}
         />
         <Bar dataKey="value" fill={color} radius={[6, 6, 0, 0]} maxBarSize={44} />

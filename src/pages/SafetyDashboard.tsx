@@ -59,7 +59,7 @@ export function SafetyDashboard() {
               <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
               <XAxis dataKey="x" tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} width={30} />
-              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12 }} />
+              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12, background: "var(--color-surface)", color: "var(--color-navy-950)" }} />
               <Legend wrapperStyle={{ fontSize: 10 }} />
               <ReferenceLine y={0.5} stroke="var(--color-status-warn)" strokeDasharray="4 4" />
               <Line type="monotone" dataKey="current" name="FY 2025-26" stroke="var(--color-brand-blue)" strokeWidth={2.25} dot={{ r: 3 }} />

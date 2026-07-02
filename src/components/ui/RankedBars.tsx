@@ -7,7 +7,7 @@ export function RankedBars({ data, color = "var(--color-brand-blue)" }: { data: 
       {data.map((row) => (
         <li key={row.label} className="grid grid-cols-[minmax(90px,150px)_1fr_32px] items-center gap-2 text-[12px]">
           <span className="truncate font-medium text-[var(--color-navy-900)]">{row.label}</span>
-          <div className="h-2.5 w-full overflow-hidden rounded-full bg-slate-100">
+          <div className="h-2.5 w-full overflow-hidden rounded-full bg-[var(--color-track)]">
             <div
               className="h-full rounded-full"
               style={{ width: `${(row.value / max) * 100}%`, background: color }}

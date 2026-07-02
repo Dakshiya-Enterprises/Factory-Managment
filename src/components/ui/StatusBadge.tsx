@@ -6,7 +6,7 @@ const TONE_STYLES: Record<StatusTone, string> = {
   warn: "bg-[var(--color-status-warn-bg)] text-[var(--color-status-warn)]",
   bad: "bg-[var(--color-status-bad-bg)] text-[var(--color-status-bad)]",
   info: "bg-[var(--color-status-info-bg)] text-[var(--color-status-info)]",
-  neutral: "bg-slate-100 text-slate-600",
+  neutral: "bg-[var(--color-track)] text-[var(--color-muted)]",
 };
 
 export function StatusBadge({ label, tone }: { label: string; tone: StatusTone }) {

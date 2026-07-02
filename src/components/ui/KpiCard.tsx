@@ -9,7 +9,7 @@ const ACCENT: Record<AccentColor, { bg: string; fg: string }> = {
   purple: { bg: "bg-[var(--color-status-purple-bg)]", fg: "text-[var(--color-status-purple)]" },
   red: { bg: "bg-[var(--color-status-bad-bg)]", fg: "text-[var(--color-status-bad)]" },
   teal: { bg: "bg-[var(--color-status-teal-bg)]", fg: "text-[var(--color-status-teal)]" },
-  navy: { bg: "bg-slate-100", fg: "text-[var(--color-navy-900)]" },
+  navy: { bg: "bg-[var(--color-track)]", fg: "text-[var(--color-navy-900)]" },
 };
 
 export function KpiCard({ kpi }: { kpi: Kpi }) {

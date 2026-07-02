@@ -34,7 +34,7 @@ const columns: Column<OrderRow>[] = [
     header: "% Complete",
     render: (r) => (
       <div className="flex items-center gap-2">
-        <div className="h-2 w-24 overflow-hidden rounded-full bg-slate-100">
+        <div className="h-2 w-24 overflow-hidden rounded-full bg-[var(--color-track)]">
           <div
             className="h-full rounded-full"
             style={{ width: `${r.pctComplete}%`, background: r.pctComplete >= 80 ? "var(--color-status-good)" : r.pctComplete >= 55 ? "var(--color-status-warn)" : "var(--color-status-bad)" }}

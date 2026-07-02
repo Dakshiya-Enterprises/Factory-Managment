@@ -24,7 +24,7 @@ export function SimpleTable<T extends { id: string | number }>({
     <div className="overflow-x-auto">
       <table className="w-full min-w-[720px] border-collapse text-[12.5px]">
         <thead>
-          <tr className="bg-[var(--color-navy-900)] text-white">
+          <tr className="bg-[var(--color-header-bg)] text-white">
             {columns.map((col) => (
               <th
                 key={col.key}
@@ -39,7 +39,7 @@ export function SimpleTable<T extends { id: string | number }>({
           {rows.map((row, i) => (
             <tr
               key={row.id}
-              className={`border-b border-[var(--color-border)] last:border-0 ${i % 2 === 1 ? "bg-slate-50/60" : ""} hover:bg-[var(--color-status-info-bg)]/60`}
+              className={`border-b border-[var(--color-border)] last:border-0 ${i % 2 === 1 ? "bg-[var(--color-zebra)]" : ""} hover:bg-[var(--color-status-info-bg)]`}
             >
               {columns.map((col) => (
                 <td key={col.key} className={`whitespace-nowrap px-3 py-2 ${ALIGN_CLASS[col.align ?? "left"]}`}>

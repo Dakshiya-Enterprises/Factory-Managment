@@ -31,7 +31,7 @@ export function DonutStat({ data, total, totalLabel = "TOTAL", height = 160 }: D
             </Pie>
             <Tooltip
               formatter={(value: number, name: string) => [value.toLocaleString(), name]}
-              contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12 }}
+              contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12, background: "var(--color-surface)", color: "var(--color-navy-950)" }}
             />
           </PieChart>
         </ResponsiveContainer>

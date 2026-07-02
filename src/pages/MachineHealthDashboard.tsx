@@ -42,7 +42,7 @@ const columns: Column<MachineRow>[] = [
     header: "Needle Count",
     render: (r) => (
       <div className="flex items-center gap-2">
-        <div className="h-1.5 w-16 overflow-hidden rounded-full bg-slate-100">
+        <div className="h-1.5 w-16 overflow-hidden rounded-full bg-[var(--color-track)]">
           <div className="h-full rounded-full bg-[var(--color-status-good)]" style={{ width: `${(r.needleCount / r.needleMax) * 100}%` }} />
         </div>
         <span className="text-[11px] text-[var(--color-muted)]">{r.needleCount.toLocaleString()} / {r.needleMax.toLocaleString()}</span>
@@ -129,7 +129,7 @@ export function MachineHealthDashboard() {
               <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
               <XAxis dataKey="x" tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} width={30} />
-              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12 }} />
+              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12, background: "var(--color-surface)", color: "var(--color-navy-950)" }} />
               <Line type="monotone" dataKey="y" stroke="var(--color-brand-blue)" strokeWidth={2.25} dot={{ r: 3 }} />
             </LineChart>
           </ResponsiveContainer>
@@ -140,7 +140,7 @@ export function MachineHealthDashboard() {
               <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
               <XAxis dataKey="x" tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} width={30} />
-              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12 }} cursor={{ fill: "var(--color-page)" }} />
+              <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12, background: "var(--color-surface)", color: "var(--color-navy-950)" }} cursor={{ fill: "var(--color-page)" }} />
               <Bar dataKey="y" fill="var(--color-status-bad)" radius={[6, 6, 0, 0]} maxBarSize={36} />
             </BarChart>
           </ResponsiveContainer>
