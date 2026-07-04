@@ -1,0 +1,33 @@
+name: Deploy to Windows Server
+
+# Fires once the CI workflow finishes on main — deploying only after a
+# push has actually passed type-check + build avoids pushing a broken
+# build to the live dashboard. Requires a self-hosted runner registered
+# on the Windows server with the default "self-hosted, Windows" labels
+# (see DEPLOYMENT.md).
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch: {} # manual re-run from the Actions tab, e.g. to pick up a server-side fix
+
+jobs:
+  deploy:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: [self-hosted, Windows]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Restart PM2 site
+        shell: pwsh
+        run: ./scripts/deploy.ps1
