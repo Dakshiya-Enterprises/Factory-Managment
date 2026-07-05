@@ -19,7 +19,7 @@ export interface BrandingConfig {
  * so a new deployment never renders with a blank logo/name.
  */
 const DEFAULT_BRANDING: BrandingConfig = {
-  companyName: "JSW BPSL",
+  companyName: "JSW",
   fullName: "JSW Steel - Bhushan Power & Steel Ltd.",
   tagline: "MADE WITH PRIDE",
   logo: "/branding/jsw-steel-logo.png",

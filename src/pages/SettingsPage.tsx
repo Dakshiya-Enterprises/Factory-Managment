@@ -170,7 +170,7 @@ export function SettingsPage() {
                   value={branding.companyName}
                   maxLength={40}
                   onChange={(e) => updateBranding({ companyName: e.target.value })}
-                  placeholder="e.g. JSW BPSL"
+                  placeholder="e.g. JSW"
                 />
               </Field>
               <Field label="Tagline" hint="Small caption under the brand name">
