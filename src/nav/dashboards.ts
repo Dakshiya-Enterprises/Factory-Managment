@@ -8,6 +8,7 @@ import {
   HeartPulse,
   Leaf,
   Presentation,
+  Radar,
   ShieldAlert,
   Stethoscope,
   Users,
@@ -26,7 +27,7 @@ export interface DashboardNavItem {
 }
 
 /**
- * All 14 dashboard slots. Titles/slugs mirror the real screen names as
+ * All 15 dashboard slots. Titles/slugs mirror the real screen names as
  * they're handed off; unbuilt slots render as disabled "coming soon"
  * nav entries so the sidebar/routing shape doesn't change as more
  * screens arrive.
@@ -46,6 +47,7 @@ export const DASHBOARDS: DashboardNavItem[] = [
   { order: 12, slug: "maintenance", title: "Maintenance Performance", subtitle: "Monitoring & Asset Reliability", icon: Wrench, status: "live" },
   { order: 13, slug: "hse", title: "HSE Performance", subtitle: "Incident Prevention & Compliance", icon: Stethoscope, status: "live" },
   { order: 14, slug: "executive", title: "Executive Summary", subtitle: "Plant-Wide Roll-up", icon: Presentation, status: "soon" },
+  { order: 15, slug: "factory-3d", title: "3D Factory Monitoring", subtitle: "Realtime Worker Presence & Surveillance", icon: Radar, status: "live" },
 ];
 
 export const TOTAL_DASHBOARDS = DASHBOARDS.length;

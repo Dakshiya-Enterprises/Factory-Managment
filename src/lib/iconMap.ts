@@ -43,7 +43,9 @@ import {
   UserCheck,
   Users,
   UserX,
+  Video,
   Wallet,
+  Wifi,
   Wind,
   Wrench,
   XCircle,
@@ -101,4 +103,6 @@ export const ICONS: Record<string, LucideIcon> = {
   trash: Trash2,
   sun: Sun,
   flame: Flame,
+  video: Video,
+  wifi: Wifi,
 };

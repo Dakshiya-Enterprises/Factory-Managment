@@ -1,3 +1,4 @@
+import { Suspense, lazy } from "react";
 import { Navigate, Route, HashRouter, Routes } from "react-router-dom";
 import { BrandingProvider } from "@/branding/BrandingContext";
 import { RootLayout } from "@/components/layout/RootLayout";
@@ -14,6 +15,12 @@ import { HseDashboard } from "@/pages/HseDashboard";
 import { ProductionOpsDashboard } from "@/pages/ProductionOpsDashboard";
 import { EnergyUtilitiesDashboard } from "@/pages/EnergyUtilitiesDashboard";
 import { SettingsPage } from "@/pages/SettingsPage";
+
+// Lazy-loaded: pulls in three.js/@react-three, kept out of the main bundle
+// other dashboards pay for.
+const Factory3DDashboard = lazy(() =>
+  import("@/pages/Factory3DDashboard").then((m) => ({ default: m.Factory3DDashboard })),
+);
 
 export default function App() {
   return (
@@ -34,6 +41,14 @@ export default function App() {
             <Route path="/d/hse" element={<HseDashboard />} />
             <Route path="/d/production-ops" element={<ProductionOpsDashboard />} />
             <Route path="/d/energy-utilities" element={<EnergyUtilitiesDashboard />} />
+            <Route
+              path="/d/factory-3d"
+              element={
+                <Suspense fallback={null}>
+                  <Factory3DDashboard />
+                </Suspense>
+              }
+            />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="*" element={<Navigate to="/d/overview" replace />} />
           </Route>
