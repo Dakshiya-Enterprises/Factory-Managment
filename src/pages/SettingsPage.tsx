@@ -170,7 +170,7 @@ export function SettingsPage() {
                   value={branding.companyName}
                   maxLength={40}
                   onChange={(e) => updateBranding({ companyName: e.target.value })}
-                  placeholder="e.g. JSW"
+                  placeholder="e.g. FactoryOS"
                 />
               </Field>
               <Field label="Tagline" hint="Small caption under the brand name">
@@ -187,7 +187,7 @@ export function SettingsPage() {
                     value={branding.fullName}
                     maxLength={80}
                     onChange={(e) => updateBranding({ fullName: e.target.value })}
-                    placeholder="e.g. JSW Steel - Bhushan Power & Steel Ltd."
+                    placeholder="e.g. FactoryOS — Intelligent Manufacturing Platform"
                   />
                 </Field>
               </div>

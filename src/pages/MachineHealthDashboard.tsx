@@ -1,5 +1,10 @@
 import { AlertTriangle, Flame, Gauge, ThermometerSun, Wrench } from "lucide-react";
-import { Bar, BarChart, CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import {
+  Bar, BarChart, CartesianGrid, Line, LineChart,
+  RadialBar, RadialBarChart, PolarAngleAxis,
+  Area, AreaChart,
+  ResponsiveContainer, Tooltip, XAxis, YAxis, Legend,
+} from "recharts";
 import { DashboardShell } from "@/components/layout/DashboardShell";
 import { InsightBanner } from "@/components/layout/InsightBanner";
 import { Card } from "@/components/ui/Card";
@@ -63,6 +68,83 @@ function alertIcon(message: string) {
   return Wrench;
 }
 
+// ── OEE Gauge — concentric radial rings + progress legend ────────────────────
+
+const OEE_METRICS = [
+  { key: "oee",          label: "OEE",         fill: "#f59e0b" },
+  { key: "availability", label: "Availability", fill: "#1e56c9" },
+  { key: "performance",  label: "Performance",  fill: "#7c3aed" },
+  { key: "quality",      label: "Quality",      fill: "#16a34a" },
+] as const;
+
+type OEEKey = (typeof OEE_METRICS)[number]["key"];
+
+interface OEEData { availability: number; performance: number; quality: number; oee: number }
+
+function OEEGauge({ oee }: { oee: OEEData }) {
+  // RadialBarChart: first entry = outermost ring
+  const chartData = OEE_METRICS.map((m) => ({
+    name:  m.label,
+    value: oee[m.key as OEEKey],
+    fill:  m.fill,
+  }));
+
+  return (
+    <div>
+      {/* Concentric rings */}
+      <div className="relative">
+        <ResponsiveContainer width="100%" height={210}>
+          <RadialBarChart
+            cx="50%" cy="50%"
+            innerRadius="22%" outerRadius="92%"
+            data={chartData}
+            startAngle={90} endAngle={-270}
+            barCategoryGap={4}
+          >
+            <PolarAngleAxis type="number" domain={[0, 100]} tick={false} />
+            <RadialBar
+              background={{ fill: "var(--color-track)" }}
+              dataKey="value"
+              cornerRadius={6}
+            />
+          </RadialBarChart>
+        </ResponsiveContainer>
+
+        {/* Centre label — OEE composite score */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none select-none">
+          <span className="text-[9px] font-bold uppercase tracking-widest text-[var(--color-muted)]">OEE Score</span>
+          <span className="text-[34px] font-black leading-none" style={{ color: "#f59e0b" }}>{oee.oee}</span>
+          <span className="text-[9px] text-[var(--color-muted)] mt-0.5">Target ≥ 85%</span>
+        </div>
+      </div>
+
+      {/* Legend rows with inline progress bars */}
+      <div className="mt-1 space-y-2">
+        {OEE_METRICS.map((m) => {
+          const val = oee[m.key as OEEKey];
+          return (
+            <div key={m.key} className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: m.fill }} />
+              <span className="w-[72px] flex-shrink-0 text-[10.5px] font-semibold text-[var(--color-muted)]">{m.label}</span>
+              <div className="flex-1 h-2 rounded-full overflow-hidden bg-[var(--color-track)]">
+                <div
+                  className="h-full rounded-full transition-all duration-500"
+                  style={{ width: `${val}%`, background: m.fill }}
+                />
+              </div>
+              <span className="w-10 text-right text-[11px] font-bold flex-shrink-0" style={{ color: m.fill }}>
+                {val}%
+              </span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+
 export function MachineHealthDashboard() {
   const { data, lastUpdated } = useLiveData(generateMachineHealthData, 30_000);
   if (!data) return null;
@@ -81,12 +163,7 @@ export function MachineHealthDashboard() {
             <DonutStat data={data.utilization} total={data.utilization.reduce((s, d) => s + d.value, 0)} height={160} />
           </Card>
           <Card title="OEE Overview" subtitle="(All Machines)">
-            <div className="grid grid-cols-4 gap-1">
-              <RadialScore value={data.oee.availability} label="Availability" size={80} color="var(--color-brand-blue)" />
-              <RadialScore value={data.oee.performance} label="Performance" size={80} color="var(--color-status-purple)" />
-              <RadialScore value={data.oee.quality} label="Quality" size={80} color="var(--color-status-good)" />
-              <RadialScore value={data.oee.oee} label="OEE" size={80} color="var(--color-status-warn)" />
-            </div>
+            <OEEGauge oee={data.oee} />
           </Card>
         </div>
 
@@ -125,13 +202,19 @@ export function MachineHealthDashboard() {
         </Card>
         <Card title="Health Trend" subtitle="(Last 7 Days)">
           <ResponsiveContainer width="100%" height={170}>
-            <LineChart data={data.healthTrend} margin={{ top: 8, right: 8, bottom: 0, left: -18 }}>
+            <AreaChart data={data.healthTrend} margin={{ top: 8, right: 8, bottom: 0, left: -18 }}>
+              <defs>
+                <linearGradient id="healthGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="5%" stopColor="var(--color-brand-blue)" stopOpacity={0.22} />
+                  <stop offset="95%" stopColor="var(--color-brand-blue)" stopOpacity={0} />
+                </linearGradient>
+              </defs>
               <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
               <XAxis dataKey="x" tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} />
-              <YAxis tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} width={30} />
+              <YAxis domain={[70, 100]} tick={{ fontSize: 10, fill: "var(--color-muted)" }} axisLine={false} tickLine={false} width={30} />
               <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid var(--color-border)", fontSize: 12, background: "var(--color-surface)", color: "var(--color-navy-950)" }} />
-              <Line type="monotone" dataKey="y" stroke="var(--color-brand-blue)" strokeWidth={2.25} dot={{ r: 3 }} />
-            </LineChart>
+              <Area type="monotone" dataKey="y" stroke="var(--color-brand-blue)" strokeWidth={2.25} fill="url(#healthGrad)" dot={{ r: 3, fill: "var(--color-brand-blue)" }} activeDot={{ r: 5 }} />
+            </AreaChart>
           </ResponsiveContainer>
         </Card>
         <Card title="Breakdown Trend" subtitle="(Last 7 Days)">

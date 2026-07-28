@@ -19,17 +19,17 @@ export interface BrandingConfig {
  * so a new deployment never renders with a blank logo/name.
  */
 const DEFAULT_BRANDING: BrandingConfig = {
-  companyName: "JSW",
-  fullName: "JSW Steel - Bhushan Power & Steel Ltd.",
-  tagline: "MADE WITH PRIDE",
-  logo: "/branding/jsw-steel-logo.png",
+  companyName: "FactoryOS",
+  fullName: "FactoryOS — Intelligent Manufacturing Platform",
+  tagline: "POWERED BY INTELLIGENCE",
+  logo: "/branding/factoryos-logo.svg",
   primaryColor: "#1e56c9",
   sidebarColor: "#0a1a3a",
   colorScheme: "light",
   totalDashboards: 14,
 };
 
-const STORAGE_KEY = "jsw-branding-overrides";
+const STORAGE_KEY = "factoryos-branding-overrides";
 
 function readOverrides(): Partial<BrandingConfig> {
   try {
