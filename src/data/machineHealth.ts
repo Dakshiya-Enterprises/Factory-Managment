@@ -48,6 +48,9 @@ export function generateMachineHealthData(): MachineHealthData {
   const running = Math.round(jitter(912, 3, 0));
   const total = 980;
   const availability = jitter(96.4, 0.2, 1);
+  const oeePerformance = jitter(88.7, 0.5, 1);
+  const oeeQuality = jitter(96.8, 0.3, 1);
+  const oee = Math.round(((availability * oeePerformance * oeeQuality) / 10000) * 10) / 10;
 
   return {
     kpis: [
@@ -64,7 +67,7 @@ export function generateMachineHealthData(): MachineHealthData {
       { label: "Breakdown", value: 17, color: "#dc2626" },
       { label: "Maintenance", value: 13, color: "#7c3aed" },
     ],
-    oee: { availability: 96.4, performance: 88.7, quality: 96.8, oee: 82.7 },
+    oee: { availability, performance: oeePerformance, quality: oeeQuality, oee },
     ageProfile: [
       { label: "0 - 1 Year", value: 120 },
       { label: "1 - 3 Year", value: 260 },

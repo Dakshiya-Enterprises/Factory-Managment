@@ -1,10 +1,10 @@
 {
-  "companyName": "JSW",
-  "fullName": "JSW Steel - Bhushan Power & Steel Ltd.",
-  "tagline": "MADE WITH PRIDE",
-  "logo": "/branding/jsw-steel-logo.png",
+  "companyName": "Your Factory",
+  "fullName": "Your Factory Manufacturing Pvt. Ltd.",
+  "tagline": "REALTIME FACTORY INTELLIGENCE",
+  "logo": "/branding/default-logo.svg",
   "primaryColor": "#1e56c9",
   "sidebarColor": "#0a1a3a",
   "colorScheme": "light",
-  "totalDashboards": 14
+  "totalDashboards": 15
 }

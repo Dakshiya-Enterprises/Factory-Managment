@@ -80,14 +80,6 @@ export function MachineHealthDashboard() {
           <Card title="Machine Utilization">
             <DonutStat data={data.utilization} total={data.utilization.reduce((s, d) => s + d.value, 0)} height={160} />
           </Card>
-          <Card title="OEE Overview" subtitle="(All Machines)">
-            <div className="grid grid-cols-4 gap-1">
-              <RadialScore value={data.oee.availability} label="Availability" size={80} color="var(--color-brand-blue)" />
-              <RadialScore value={data.oee.performance} label="Performance" size={80} color="var(--color-status-purple)" />
-              <RadialScore value={data.oee.quality} label="Quality" size={80} color="var(--color-status-good)" />
-              <RadialScore value={data.oee.oee} label="OEE" size={80} color="var(--color-status-warn)" />
-            </div>
-          </Card>
         </div>
 
         <Card title="Machine Health List" subtitle="(Real Time)">
@@ -118,6 +110,20 @@ export function MachineHealthDashboard() {
           </Card>
         </div>
       </div>
+
+      <Card title="OEE Overview" subtitle="(All Machines)">
+        <div className="flex flex-wrap items-center justify-center gap-8 py-2">
+          <RadialScore value={data.oee.availability} label="Availability" size={120} color="var(--color-brand-blue)" />
+          <span className="text-xl font-bold text-[var(--color-muted)]">×</span>
+          <RadialScore value={data.oee.performance} label="Performance" size={120} color="var(--color-status-purple)" />
+          <span className="text-xl font-bold text-[var(--color-muted)]">×</span>
+          <RadialScore value={data.oee.quality} label="Quality" size={120} color="var(--color-status-good)" />
+          <span className="text-xl font-bold text-[var(--color-muted)]">=</span>
+          <div className="rounded-2xl bg-[var(--color-page)] p-3">
+            <RadialScore value={data.oee.oee} label="OEE" size={150} color="var(--color-status-warn)" />
+          </div>
+        </div>
+      </Card>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-4">
         <Card title="Machine Age Profile">

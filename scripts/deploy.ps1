@@ -11,7 +11,7 @@
   the latest push.
 #>
 param(
-  [string]$AppName = "jsw-dashboard",
+  [string]$AppName = "factory-dashboard",
   [int]$Port = 3000
 )
 
