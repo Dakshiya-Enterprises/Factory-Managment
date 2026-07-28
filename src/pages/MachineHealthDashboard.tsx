@@ -96,7 +96,7 @@ function OEEGauge({ oee }: { oee: OEEData }) {
         <ResponsiveContainer width="100%" height={210}>
           <RadialBarChart
             cx="50%" cy="50%"
-            innerRadius="22%" outerRadius="92%"
+            innerRadius="48%" outerRadius="92%"
             data={chartData}
             startAngle={90} endAngle={-270}
             barCategoryGap={4}
@@ -113,7 +113,7 @@ function OEEGauge({ oee }: { oee: OEEData }) {
         {/* Centre label — OEE composite score */}
         <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none select-none">
           <span className="text-[9px] font-bold uppercase tracking-widest text-[var(--color-muted)]">OEE Score</span>
-          <span className="text-[34px] font-black leading-none" style={{ color: "#f59e0b" }}>{oee.oee}</span>
+          <span className="text-[26px] font-black leading-none" style={{ color: "#f59e0b" }}>{oee.oee}</span>
           <span className="text-[9px] text-[var(--color-muted)] mt-0.5">Target ≥ 85%</span>
         </div>
       </div>

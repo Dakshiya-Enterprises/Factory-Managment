@@ -62,19 +62,19 @@ The first time `deploy.yml` runs, there's no PM2 process yet, so `scripts/deploy
 starts one:
 
 ```
-pm2 serve dist 3000 --name jsw-dashboard --spa
+pm2 serve dist 3000 --name factory-dashboard --spa
 ```
 
 Every push after that just restarts the same process. Check it's up:
 
 ```powershell
 pm2 status
-pm2 logs jsw-dashboard
+pm2 logs factory-dashboard
 ```
 
 Open **http://localhost:3000** on the server, or **http://<server-ip>:3000** from
 another machine on the LAN (add a Windows Firewall inbound rule for TCP 3000 if it's
-blocked — `New-NetFirewallRule -DisplayName "JSW Dashboard" -Direction Inbound -LocalPort 3000 -Protocol TCP -Action Allow`).
+blocked — `New-NetFirewallRule -DisplayName "Factory Dashboard" -Direction Inbound -LocalPort 3000 -Protocol TCP -Action Allow`).
 
 ## Changing the port or app name
 
