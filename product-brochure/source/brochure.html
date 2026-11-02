@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>FactoryOS — Product Brochure</title>
+<link rel="stylesheet" href="brochure.css" />
+</head>
+<body>
+
+<!-- ============================================================ PAGE 1 — COVER ============================================================ -->
+<section class="page cover">
+  <div class="cover-top">
+    <div class="cover-logo">
+      <div class="cover-logo-mark"><span></span><span></span><span></span></div>
+      <div class="cover-logo-text">
+        <div class="name">FactoryOS</div>
+        <div class="tagline">Powered by Intelligence</div>
+      </div>
+    </div>
+    <div class="cover-doc-meta">Product Brochure<br/>November 2026</div>
+  </div>
+
+  <div class="cover-mid">
+    <div class="cover-headline">
+      <span class="cover-eyebrow">Intelligent Manufacturing Platform</span>
+      <h1 class="cover-title">Every signal<br/>from your factory<br/>floor, <em>in one place.</em></h1>
+      <p class="cover-subhead">A real-time operations command center — production, machine health, workforce, safety, quality, energy, and a live 3D digital twin of the plant floor — unified under one configurable, white-label platform.</p>
+      <div class="cover-stats">
+        <div class="cover-stat"><div class="num">13</div><div class="label">Live Dashboards</div></div>
+        <div class="cover-stat"><div class="num">11</div><div class="label">Operational Modules</div></div>
+        <div class="cover-stat"><div class="num">1</div><div class="label">Live 3D Digital Twin</div></div>
+      </div>
+    </div>
+    <div class="cover-shot">
+      <img src="../screenshots/13-factory-3d-viewport.png" alt="FactoryOS 3D Factory Monitoring" />
+    </div>
+  </div>
+
+  <div class="cover-bottom">
+    <div class="cover-bottom-left">FactoryOS — Intelligent Manufacturing Platform<br/>Prepared as a client-facing capability overview.</div>
+    <div class="cover-bottom-right">
+      <span class="cover-pill">Production</span>
+      <span class="cover-pill">Reliability</span>
+      <span class="cover-pill">Safety</span>
+      <span class="cover-pill">Sustainability</span>
+      <span class="cover-pill">Spatial Intelligence</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ PAGE 2 — PRODUCT INTRODUCTION ============================================================ -->
+<section class="page">
+  <div class="content-page">
+    <div class="content-header">
+      <div>
+        <div class="content-kicker">Introduction</div>
+        <div class="content-title">What FactoryOS is</div>
+      </div>
+      <div class="content-lede">A single platform that replaces the spreadsheets, point tools, and tribal knowledge a plant's leadership, production, maintenance, safety, and quality teams would otherwise maintain separately.</div>
+    </div>
+
+    <div style="display:flex; gap:40px; flex:1;">
+      <div style="flex:1.1; display:flex; flex-direction:column; gap:22px;">
+        <p style="font-size:14.5px; line-height:1.7; color:var(--color-navy-900); font-weight:500;">
+          FactoryOS is a real-time factory operations command center built for discrete and process manufacturing plants.
+          It consolidates the metrics a plant would normally track across disconnected tools — production throughput, machine
+          condition, operator performance, order fulfillment, safety incidents, environmental compliance, and energy
+          consumption — into thirteen purpose-built live dashboards, plus a navigable 3D digital twin of the physical
+          factory floor.
+        </p>
+        <p style="font-size:14.5px; line-height:1.7; color:var(--color-navy-900); font-weight:500;">
+          Every screen refreshes on its own live cycle, so a number on the page is never more than seconds stale.
+          The platform is architected data-source-agnostic: today's build runs on a realistic simulation layer, with every
+          data type already shaped so a production ERP, MES, SCADA system, or IoT/computer-vision pipeline can be connected
+          later without redesigning a single screen.
+        </p>
+        <p style="font-size:14.5px; line-height:1.7; color:var(--color-navy-900); font-weight:500;">
+          Brand identity — name, tagline, logo, and accent color — is runtime-configurable from within the product itself,
+          making FactoryOS deployable as a genuine multi-tenant SaaS offering: the same codebase serves any manufacturing
+          customer under its own identity.
+        </p>
+      </div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:14px;">
+        <div class="side-block value">
+          <div class="label">Who it serves</div>
+          <p style="margin-bottom:8px;"><strong>Plant leadership</strong> — one roll-up screen for revenue, efficiency, quality, safety, and energy.</p>
+          <p style="margin-bottom:8px;"><strong>Production &amp; operations managers</strong> — line-level throughput, OEE, and downtime.</p>
+          <p style="margin-bottom:8px;"><strong>Maintenance &amp; reliability engineers</strong> — condition-based asset health and work-order compliance.</p>
+          <p style="margin-bottom:8px;"><strong>EHS teams</strong> — incident, near-miss, and environmental-limit tracking.</p>
+          <p><strong>Security &amp; floor operations</strong> — live spatial awareness of every tracked worker and asset.</p>
+        </div>
+        <div class="side-block value">
+          <div class="label">Built on</div>
+          <p>React 18 + TypeScript, Vite, Tailwind CSS, Recharts for 2D visualization, and three.js / React Three Fiber for the live 3D factory model — a modern, maintainable stack chosen for both performance and long-term extensibility.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">02</div>
+</section>
+
+<!-- ============================================================ PAGE 3 — PLATFORM OVERVIEW ============================================================ -->
+<section class="page">
+  <div class="content-page">
+    <div class="content-header">
+      <div>
+        <div class="content-kicker">Platform Overview</div>
+        <div class="content-title">Eleven modules, one navigation</div>
+      </div>
+      <div class="content-lede">Every module lives behind a single, numbered sidebar — the same navigation shape scales from today's 13 live screens to the two already-reserved slots below.</div>
+    </div>
+
+    <div class="module-grid" style="margin-bottom:14px;">
+      <div class="module-tile"><div class="mnum">01</div><div class="mtitle">Executive Intelligence</div><div class="mpages">CEO Live Scorecard</div></div>
+      <div class="module-tile"><div class="mnum">02</div><div class="mtitle">Order Management</div><div class="mpages">Order Status</div></div>
+      <div class="module-tile"><div class="mnum">03</div><div class="mtitle">Production</div><div class="mpages">Production Line · Production &amp; Operations</div></div>
+      <div class="module-tile"><div class="mnum">04</div><div class="mtitle">Asset &amp; Machine Mgmt</div><div class="mpages">Machine Health · Maintenance Performance</div></div>
+      <div class="module-tile"><div class="mnum">05</div><div class="mtitle">Workforce</div><div class="mpages">Operator</div></div>
+      <div class="module-tile"><div class="mnum">06</div><div class="mtitle">Safety &amp; Compliance</div><div class="mpages">Safety &amp; Incident · HSE Performance</div></div>
+      <div class="module-tile"><div class="mnum">07</div><div class="mtitle">Sustainability</div><div class="mpages">Environment &amp; Sustainability</div></div>
+      <div class="module-tile"><div class="mnum">08</div><div class="mtitle">Quality</div><div class="mpages">Quality Management</div></div>
+      <div class="module-tile"><div class="mnum">09</div><div class="mtitle">Utilities</div><div class="mpages">Energy &amp; Utilities</div></div>
+      <div class="module-tile"><div class="mnum">10</div><div class="mtitle">Spatial Intelligence</div><div class="mpages">3D Factory Monitoring &amp; Surveillance</div></div>
+      <div class="module-tile"><div class="mnum">11</div><div class="mtitle">Administration</div><div class="mpages">Settings — Brand &amp; Theme</div></div>
+      <div class="module-tile planned"><div class="mnum">—</div><div class="mtitle">Inventory</div><div class="mpages">Spares &amp; Stock</div></div>
+    </div>
+
+    <div style="flex:1; min-height:0;">
+      <table class="inv-table">
+        <thead><tr><th>Dashboard</th><th>Route</th><th>Status</th><th>Primary table</th></tr></thead>
+        <tbody>
+          <tr><td>CEO Live Scorecard</td><td>/d/overview</td><td><span class="pill live">Live</span></td><td>—</td></tr>
+          <tr><td>Order Status</td><td>/d/orders</td><td><span class="pill live">Live</span></td><td>15-column order tracking table</td></tr>
+          <tr><td>Production Line</td><td>/d/production-line</td><td><span class="pill live">Live</span></td><td>Plant layout performance map</td></tr>
+          <tr><td>Machine Health</td><td>/d/machine-health</td><td><span class="pill live">Live</span></td><td>12-column machine list (980 assets)</td></tr>
+          <tr><td>Operator</td><td>/d/operator</td><td><span class="pill live">Live</span></td><td>12-column operator roster (1,248 people)</td></tr>
+          <tr><td>Inventory</td><td>— (locked)</td><td><span class="pill soon">Coming Soon</span></td><td>—</td></tr>
+          <tr><td>Safety &amp; Incident</td><td>/d/safety</td><td><span class="pill live">Live</span></td><td>9-column incident log</td></tr>
+          <tr><td>Environment &amp; Sustainability</td><td>/d/environment</td><td><span class="pill live">Live</span></td><td>7-column live parameter table</td></tr>
+          <tr><td>Quality Management</td><td>/d/quality</td><td><span class="pill live">Live</span></td><td>11-column line/area quality table</td></tr>
+          <tr><td>Production &amp; Operations</td><td>/d/production-ops</td><td><span class="pill live">Live</span></td><td>9-column unit/shop production table</td></tr>
+          <tr><td>Energy &amp; Utilities</td><td>/d/energy-utilities</td><td><span class="pill live">Live</span></td><td>14-column utility consumption table</td></tr>
+          <tr><td>Maintenance Performance</td><td>/d/maintenance</td><td><span class="pill live">Live</span></td><td>15-column area &amp; shutdown tables</td></tr>
+          <tr><td>HSE Performance</td><td>/d/hse</td><td><span class="pill live">Live</span></td><td>14-column plant &amp; risk-control tables</td></tr>
+          <tr><td>Executive Summary</td><td>— (locked)</td><td><span class="pill soon">Coming Soon</span></td><td>—</td></tr>
+          <tr><td>3D Factory Monitoring &amp; Surveillance</td><td>/d/factory-3d</td><td><span class="pill live">Live</span></td><td>Live worker presence list</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">03</div>
+</section>
+
+<!-- ============================================================ DIVIDER — PART I ============================================================ -->
+<section class="page divider">
+  <div class="divider-index">Part I</div>
+  <div class="divider-title">Executive &amp; Commercial Intelligence</div>
+  <div class="divider-desc">The two screens a plant's leadership and commercial team open first: a factory-wide performance roll-up, and a live view of every purchase order from PO to dispatch.</div>
+  <div class="divider-modules">
+    <span class="active">01 — Executive Intelligence</span>
+    <span class="active">02 — Order Management</span>
+    <span>03 — Production</span>
+    <span>04 — Asset &amp; Machine Mgmt</span>
+    <span>05 — Workforce</span>
+    <span>06 — Safety &amp; Compliance</span>
+    <span>07 — Sustainability</span>
+    <span>08 — Quality</span>
+    <span>09 — Utilities</span>
+    <span>10 — Spatial Intelligence</span>
+    <span>11 — Administration</span>
+  </div>
+  <div class="divider-rule"></div>
+</section>
+
+<!-- ============================================================ CEO LIVE SCORECARD ============================================================ -->
+<section class="page">
+  <div class="module-page layout-b">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">01</span><span class="module-name">Executive Intelligence</span></div>
+      <div class="module-route">/d/overview</div>
+    </div>
+    <div class="module-title">CEO Live Scorecard</div>
+    <div class="module-desc">A single roll-up screen answering "are we making money, are we efficient, and what needs my attention today" — without opening a spreadsheet.</div>
+
+    <div class="split">
+      <div class="split-shot"><div class="shot-frame"><img src="../screenshots/01-ceo-scorecard-viewport.png" style="height:600px;width:auto;" /></div></div>
+      <div class="split-text">
+        <div class="side-block kpis">
+          <span class="kpi-chip">Revenue Today ₹2.06 Cr</span>
+          <span class="kpi-chip">Factory Efficiency 82%</span>
+          <span class="kpi-chip">OTIF Delivery 96%</span>
+          <span class="kpi-chip">Reject Rate 0.8%</span>
+          <span class="kpi-chip">Machine Availability 95%</span>
+        </div>
+        <div class="side-block workflow">
+          <div class="label">User Workflow</div>
+          <ol>
+            <li>Scan status tags for red/amber across the ten KPI cards.</li>
+            <li>Read the Top Alerts feed for the specific line, machine, or order flagged.</li>
+            <li>Drill into the relevant dedicated dashboard to act.</li>
+          </ol>
+        </div>
+        <div class="side-block value">
+          <div class="label">Business Value</div>
+          <p>Collapses revenue, efficiency, quality, safety, and energy — normally owned by five different teams — into one screen, so leadership spends minutes, not meetings, finding out what's wrong today.</p>
+        </div>
+        <div class="side-block">
+          <div class="label">Design Notes</div>
+          <p>Ten KPI cards each carry a trend sparkline and a vs-yesterday delta, not just a static number — every metric shows direction, not only magnitude.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">05</div>
+</section>
+
+<!-- ============================================================ ORDER STATUS ============================================================ -->
+<section class="page">
+  <div class="module-page layout-c">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">02</span><span class="module-name">Order Management</span></div>
+      <div class="module-route">/d/orders</div>
+    </div>
+    <div class="module-title">Order Status</div>
+    <div class="module-desc">Tracks every purchase order from PO issuance to dispatch, with AI-assisted delay-risk prediction and a suggested action on every row.</div>
+
+    <div class="shot-frame" style="width:auto; display:table; margin:0 auto 18px;"><img src="../screenshots/02-order-status-viewport.png" style="height:520px;width:auto;" /></div>
+
+    <div class="feature-rows">
+      <div class="feature"><div class="num">01 · Risk-Ranked Order Table</div><div class="ftitle">15-column live order tracking</div><div class="fdesc">Buyer, PO/style number, quantity complete vs. balance, expected dispatch, risk %, delay prediction, current line/operator, and a suggested action — per order.</div></div>
+      <div class="feature"><div class="num">02 · Delay Intelligence</div><div class="ftitle">Delay Risk Summary &amp; Top 5 High-Risk Orders</div><div class="fdesc">Surfaces which open POs are most likely to miss dispatch before the delay happens, ranked by risk percentage.</div></div>
+      <div class="feature"><div class="num">03 · AI Recommendation Panel</div><div class="ftitle">Prediction with a "View Detailed AI Insights" action</div><div class="fdesc">Pairs every flagged order with a concrete next step, not just a warning.</div></div>
+      <div class="feature"><div class="num">Business Value</div><div class="ftitle">Act before the customer is affected</div><div class="fdesc">A planner reassigns an at-risk order to a different line or operator while there's still time to recover, instead of discovering the delay at dispatch.</div></div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">06</div>
+</section>
+
+<!-- ============================================================ DIVIDER — PART II ============================================================ -->
+<section class="page divider">
+  <div class="divider-index">Part II</div>
+  <div class="divider-title">Production &amp; Asset Operations</div>
+  <div class="divider-desc">Line-level throughput and OEE, the 980-machine fleet's condition and remaining useful life, and the work-order discipline that keeps both running.</div>
+  <div class="divider-modules">
+    <span>01 — Executive Intelligence</span>
+    <span>02 — Order Management</span>
+    <span class="active">03 — Production</span>
+    <span class="active">04 — Asset &amp; Machine Mgmt</span>
+    <span>05 — Workforce</span>
+    <span>06 — Safety &amp; Compliance</span>
+    <span>07 — Sustainability</span>
+    <span>08 — Quality</span>
+    <span>09 — Utilities</span>
+    <span>10 — Spatial Intelligence</span>
+    <span>11 — Administration</span>
+  </div>
+  <div class="divider-rule"></div>
+</section>
+
+<!-- ============================================================ PRODUCTION LINE ============================================================ -->
+<section class="page">
+  <div class="module-page layout-b">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">03</span><span class="module-name">Production</span></div>
+      <div class="module-route">/d/production-line</div>
+    </div>
+    <div class="module-title">Production Line</div>
+    <div class="module-desc">Real-time throughput against target for every production line, with a spatial plant-layout heat map.</div>
+
+    <div class="split">
+      <div class="split-shot"><div class="shot-frame"><img src="../screenshots/03-production-line-viewport.png" style="height:600px;width:auto;" /></div></div>
+      <div class="split-text">
+        <div class="side-block kpis">
+          <span class="kpi-chip">Total Lines 40</span>
+          <span class="kpi-chip">Avg Efficiency 81%</span>
+          <span class="kpi-chip">Lines Below Target 9</span>
+          <span class="kpi-chip">Operators at Work 1,248</span>
+        </div>
+        <div class="side-block workflow">
+          <div class="label">User Workflow</div>
+          <ol>
+            <li>Scan the Plant Layout heat map for underperforming cells.</li>
+            <li>Cross-reference the Top Alerts feed for the affected line.</li>
+            <li>Trigger a Quick Action (e.g. reallocate operators) without leaving the screen.</li>
+          </ol>
+        </div>
+        <div class="side-block value">
+          <div class="label">Business Value</div>
+          <p>Turns 40 individual lines into one glanceable spatial map, so a shortfall is visible immediately rather than discovered at end-of-shift reporting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">08</div>
+</section>
+
+<!-- ============================================================ PRODUCTION & OPERATIONS ============================================================ -->
+<section class="page">
+  <div class="module-page layout-c">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">03</span><span class="module-name">Production</span></div>
+      <div class="module-route">/d/production-ops</div>
+    </div>
+    <div class="module-title">Production &amp; Operations</div>
+    <div class="module-desc">The operational counterpart to the Scorecard — unit-level production, OEE, and a downtime split that isolates where output is actually being lost. The platform's most data-dense screen, with fourteen coordinated panels.</div>
+
+    <div class="shot-frame" style="width:auto; display:table; margin:0 auto 18px;"><img src="../screenshots/09-production-ops-viewport.png" style="height:520px;width:auto;" /></div>
+
+    <div class="feature-rows">
+      <div class="feature"><div class="num">01 · Unit-Level Production Table</div><div class="ftitle">9-column Real Time Production Summary</div><div class="fdesc">Unit/shop, product, grade, target vs. actual MT, achievement %, OEE %, and status, benchmarked against yesterday.</div></div>
+      <div class="feature"><div class="num">02 · Downtime Split</div><div class="ftitle">Planned vs. unplanned downtime, isolated</div><div class="fdesc">Separates the two at the unit level — the single most common blind spot in plant reporting, since OEE is lost almost entirely in the unplanned bucket.</div></div>
+      <div class="feature"><div class="num">03 · OEE Everywhere</div><div class="ftitle">OEE Breakdown, OEE Trend, and OEE by Unit</div><div class="fdesc">The same composite metric tracked three ways — as a snapshot, a 7-day trend, and a per-unit comparison.</div></div>
+      <div class="feature"><div class="num">Business Value</div><div class="ftitle">Find the underperforming unit in seconds</div><div class="fdesc">An operations director compares Target Achievement and OEE by Unit, then the Top 5 Downtime Reasons, to decide whether the gap is maintenance load or unplanned failure.</div></div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">09</div>
+</section>
+
+<!-- ============================================================ MACHINE HEALTH ============================================================ -->
+<section class="page">
+  <div class="module-page layout-b">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">04</span><span class="module-name">Asset &amp; Machine Management</span></div>
+      <div class="module-route">/d/machine-health</div>
+    </div>
+    <div class="module-title">Machine Health</div>
+    <div class="module-desc">Condition-monitoring and OEE for the full 980-machine fleet, centered on a concentric radial OEE gauge that refreshes live.</div>
+
+    <div class="split">
+      <div class="split-shot"><div class="shot-frame"><img src="../screenshots/04-machine-health-viewport.png" style="height:600px;width:auto;" /></div></div>
+      <div class="split-text">
+        <div class="side-block kpis">
+          <span class="kpi-chip">980 Machines</span>
+          <span class="kpi-chip">912 Running</span>
+          <span class="kpi-chip">Availability 96.5%</span>
+        </div>
+        <div class="side-block workflow">
+          <div class="label">User Workflow</div>
+          <ol>
+            <li>Check the OEE gauge for the fleet-wide composite score.</li>
+            <li>Filter the 12-column machine list for Breakdown status or RUL under 7 days.</li>
+            <li>Schedule intervention before a failure stops the line.</li>
+          </ol>
+        </div>
+        <div class="side-block value">
+          <div class="label">Business Value</div>
+          <p>Converts raw readings — vibration, temperature, running hours — into an actionable health score and remaining-life estimate per machine, so maintenance is scheduled on condition, not a fixed calendar.</p>
+        </div>
+        <div class="side-block">
+          <div class="label">Design Notes</div>
+          <p>The OEE Overview reads Availability × Performance × Quality = OEE as one concentric gauge with an inline legend — the composite metric and its three drivers in a single glance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">10</div>
+</section>
+
+<!-- ============================================================ MAINTENANCE PERFORMANCE ============================================================ -->
+<section class="page">
+  <div class="module-page layout-c">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">04</span><span class="module-name">Asset &amp; Machine Management</span></div>
+      <div class="module-route">/d/maintenance</div>
+    </div>
+    <div class="module-title">Maintenance Performance</div>
+    <div class="module-desc">Work-order and reliability tracking — MTTR, MTBF, PM compliance, and cost — at the area/shop level.</div>
+
+    <div class="shot-frame" style="width:auto; display:table; margin:0 auto 18px;"><img src="../screenshots/11-maintenance-viewport.png" style="height:520px;width:auto;" /></div>
+
+    <div class="feature-rows">
+      <div class="feature"><div class="num">01 · Reliability Table</div><div class="ftitle">15-column area-level Maintenance Summary</div><div class="fdesc">Total assets, PM plan vs. completed, compliance %, breakdowns, MTTR, MTBF, and cost per area.</div></div>
+      <div class="feature"><div class="num">02 · Repeat-Failure Detection</div><div class="ftitle">Top 5 Repeating Breakdown Assets</div><div class="fdesc">The highest-leverage maintenance signal — a recurring failure on the same asset is a root-cause problem, not a random event.</div></div>
+      <div class="feature"><div class="num">03 · Shutdown Planning</div><div class="ftitle">Planned Shutdowns / Turnaround schedule</div><div class="fdesc">Area, start/end date, and progress for every scheduled outage.</div></div>
+      <div class="feature"><div class="num">Business Value</div><div class="ftitle">Shift from reactive to preventive</div><div class="fdesc">Cross-referencing repeat-failure assets against PM compliance and the Scheduled-vs-Unscheduled split justifies the investment case for more preventive maintenance.</div></div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">11</div>
+</section>
+
+<!-- ============================================================ DIVIDER — PART III ============================================================ -->
+<section class="page divider">
+  <div class="divider-index">Part III</div>
+  <div class="divider-title">Workforce, Safety &amp; Compliance</div>
+  <div class="divider-desc">1,248 operators' performance and wellbeing, and the leading and lagging indicators that keep every one of them safe.</div>
+  <div class="divider-modules">
+    <span>01 — Executive Intelligence</span>
+    <span>02 — Order Management</span>
+    <span>03 — Production</span>
+    <span>04 — Asset &amp; Machine Mgmt</span>
+    <span class="active">05 — Workforce</span>
+    <span class="active">06 — Safety &amp; Compliance</span>
+    <span>07 — Sustainability</span>
+    <span>08 — Quality</span>
+    <span>09 — Utilities</span>
+    <span>10 — Spatial Intelligence</span>
+    <span>11 — Administration</span>
+  </div>
+  <div class="divider-rule"></div>
+</section>
+
+<!-- ============================================================ OPERATOR ============================================================ -->
+<section class="page">
+  <div class="module-page layout-b">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">05</span><span class="module-name">Workforce</span></div>
+      <div class="module-route">/d/operator</div>
+    </div>
+    <div class="module-title">Operator</div>
+    <div class="module-desc">People-performance and attendance tracking across the 1,248-person operator workforce, linking productivity to engagement.</div>
+
+    <div class="split">
+      <div class="split-shot"><div class="shot-frame"><img src="../screenshots/05-operator-viewport.png" style="height:600px;width:auto;" /></div></div>
+      <div class="split-text">
+        <div class="side-block kpis">
+          <span class="kpi-chip">1,248 Operators</span>
+          <span class="kpi-chip">1,188 Present</span>
+          <span class="kpi-chip">Happiness 78.3/100</span>
+        </div>
+        <div class="side-block workflow">
+          <div class="label">User Workflow</div>
+          <ol>
+            <li>Review the performance list for operators below efficiency target.</li>
+            <li>Check happiness score alongside output and reject rate.</li>
+            <li>Use Top Performer and incentive data to plan recognition or coaching.</li>
+          </ol>
+        </div>
+        <div class="side-block value">
+          <div class="label">Business Value</div>
+          <p>Links performance to engagement and pay in one roster, making the connection between workforce wellbeing and productivity visible, not anecdotal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">13</div>
+</section>
+
+<!-- ============================================================ SAFETY & INCIDENT ============================================================ -->
+<section class="page">
+  <div class="module-page layout-c">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">06</span><span class="module-name">Safety &amp; Compliance</span></div>
+      <div class="module-route">/d/safety</div>
+    </div>
+    <div class="module-title">Safety &amp; Incident</div>
+    <div class="module-desc">Real-time incident logging and lagging-indicator tracking (LTIFR / TRIFR) against a target trend line.</div>
+
+    <div class="shot-frame" style="width:auto; display:table; margin:0 auto 18px;"><img src="../screenshots/06-safety-incident-viewport.png" style="height:520px;width:auto;" /></div>
+
+    <div class="feature-rows">
+      <div class="feature"><div class="num">01 · Incident Log</div><div class="ftitle">9-column live incident table</div><div class="fdesc">Date/time, location, type, severity, description, LTI potential, status, and days open per incident.</div></div>
+      <div class="feature"><div class="num">02 · Leading Indicators</div><div class="ftitle">Safety Observations &amp; Near Miss Reporting</div><div class="fdesc">Tracks the proactive signals — observations and near-misses reported — alongside actual incidents.</div></div>
+      <div class="feature"><div class="num">03 · Trend vs. Target</div><div class="ftitle">12-month LTIFR trend with target line</div><div class="fdesc">Confirms whether the plant is improving month over month against a defined goal, not just a raw count.</div></div>
+      <div class="feature"><div class="num">Business Value</div><div class="ftitle">Proactive, not reactive, safety</div><div class="fdesc">Makes the gap between leading and lagging indicators visible on one screen — the foundation of a mature safety program.</div></div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">14</div>
+</section>
+
+<!-- ============================================================ HSE PERFORMANCE ============================================================ -->
+<section class="page">
+  <div class="module-page layout-b">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">06</span><span class="module-name">Safety &amp; Compliance</span></div>
+      <div class="module-route">/d/hse</div>
+    </div>
+    <div class="module-title">HSE Performance</div>
+    <div class="module-desc">Plant-wide Health, Safety &amp; Environment compliance — including behaviour-based safety and critical-control effectiveness.</div>
+
+    <div class="split">
+      <div class="split-shot"><div class="shot-frame"><img src="../screenshots/12-hse-viewport.png" style="height:600px;width:auto;" /></div></div>
+      <div class="split-text">
+        <div class="side-block kpis">
+          <span class="kpi-chip">LTIFR 0.29</span>
+          <span class="kpi-chip">Near Miss 152</span>
+          <span class="kpi-chip">18.45M Man Hours</span>
+        </div>
+        <div class="side-block workflow">
+          <div class="label">User Workflow</div>
+          <ol>
+            <li>Review Critical Risk Control Status for any control marked ineffective.</li>
+            <li>Prioritize closing that gap first.</li>
+            <li>Track the plant-by-plant table to see which site needs support.</li>
+          </ol>
+        </div>
+        <div class="side-block value">
+          <div class="label">Business Value</div>
+          <p>The Critical Risk Control effectiveness breakdown is a maturity signal most safety dashboards omit — it answers whether controls are actually working, not just how many incidents occurred.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">15</div>
+</section>
+
+<!-- ============================================================ DIVIDER — PART IV ============================================================ -->
+<section class="page divider">
+  <div class="divider-index">Part IV</div>
+  <div class="divider-title">Sustainability, Quality &amp; Utilities</div>
+  <div class="divider-desc">Environmental compliance against regulatory limits, statistical process control against customer expectations, and the resource cost of running the plant.</div>
+  <div class="divider-modules">
+    <span>01 — Executive Intelligence</span>
+    <span>02 — Order Management</span>
+    <span>03 — Production</span>
+    <span>04 — Asset &amp; Machine Mgmt</span>
+    <span>05 — Workforce</span>
+    <span>06 — Safety &amp; Compliance</span>
+    <span class="active">07 — Sustainability</span>
+    <span class="active">08 — Quality</span>
+    <span class="active">09 — Utilities</span>
+    <span>10 — Spatial Intelligence</span>
+    <span>11 — Administration</span>
+  </div>
+  <div class="divider-rule"></div>
+</section>
+
+<!-- ============================================================ ENVIRONMENT & SUSTAINABILITY ============================================================ -->
+<section class="page">
+  <div class="module-page layout-c">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">07</span><span class="module-name">Sustainability</span></div>
+      <div class="module-route">/d/environment</div>
+    </div>
+    <div class="module-title">Environment &amp; Sustainability</div>
+    <div class="module-desc">Environmental compliance and sustainability metrics — emissions, water, waste, and renewable energy mix.</div>
+
+    <div class="shot-frame" style="width:auto; display:table; margin:0 auto 18px;"><img src="../screenshots/07-environment-viewport.png" style="height:520px;width:auto;" /></div>
+
+    <div class="feature-rows">
+      <div class="feature"><div class="num">01 · Live Compliance Table</div><div class="ftitle">7-column Environmental Parameters</div><div class="fdesc">Each regulatory parameter's real-time value tracked directly against its limit, with a clear status flag.</div></div>
+      <div class="feature"><div class="num">02 · Resource Intensity</div><div class="ftitle">Specific CO₂ emission &amp; water recirculation %</div><div class="fdesc">Normalized per-tonne metrics, not just absolute totals — the figures that actually drive ESG reporting.</div></div>
+      <div class="feature"><div class="num">03 · 12-Month Trends</div><div class="ftitle">CO₂, water, and waste trend charts</div><div class="fdesc">Long-term trajectory tracking alongside the day-to-day compliance table.</div></div>
+      <div class="feature"><div class="num">Business Value</div><div class="ftitle">One source for daily and annual reporting</div><div class="fdesc">Real-time regulatory compliance and long-term sustainability trend reporting share one data source, not two.</div></div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">17</div>
+</section>
+
+<!-- ============================================================ QUALITY MANAGEMENT ============================================================ -->
+<section class="page">
+  <div class="module-page layout-b">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">08</span><span class="module-name">Quality</span></div>
+      <div class="module-route">/d/quality</div>
+    </div>
+    <div class="module-title">Quality Management</div>
+    <div class="module-desc">Plant-wide conformance — first pass yield, rejection rate, process capability, and customer complaints.</div>
+
+    <div class="split">
+      <div class="split-shot"><div class="shot-frame"><img src="../screenshots/08-quality-viewport.png" style="height:600px;width:auto;" /></div></div>
+      <div class="split-text">
+        <div class="side-block kpis">
+          <span class="kpi-chip">Quality Score 89.3%</span>
+          <span class="kpi-chip">FPY 92.1%</span>
+          <span class="kpi-chip">Cpk 1.46</span>
+        </div>
+        <div class="side-block workflow">
+          <div class="label">User Workflow</div>
+          <ol>
+            <li>Scan the line/area table for Cpk below target or a rejection spike.</li>
+            <li>Cross-reference the Top Defect Types ranking.</li>
+            <li>Identify the recurring failure mode to address.</li>
+          </ol>
+        </div>
+        <div class="side-block value">
+          <div class="label">Business Value</div>
+          <p>Connects statistical process control directly to commercial outcomes, so a capability problem is caught as a quality-engineering signal before it becomes a customer complaint.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">18</div>
+</section>
+
+<!-- ============================================================ ENERGY & UTILITIES ============================================================ -->
+<section class="page">
+  <div class="module-page layout-c">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">09</span><span class="module-name">Utilities</span></div>
+      <div class="module-route">/d/energy-utilities</div>
+    </div>
+    <div class="module-title">Energy &amp; Utilities</div>
+    <div class="module-desc">Consumption, cost, and efficiency across energy, water, steam, and fuel — with identified savings opportunities.</div>
+
+    <div class="shot-frame" style="width:auto; display:table; margin:0 auto 18px;"><img src="../screenshots/10-energy-utilities-viewport.png" style="height:520px;width:auto;" /></div>
+
+    <div class="feature-rows">
+      <div class="feature"><div class="num">01 · Utility Table</div><div class="ftitle">14-column consumption summary</div><div class="fdesc">Today, yesterday, MTD, LY MTD, variance, YTD, and LYTD for every tracked utility.</div></div>
+      <div class="feature"><div class="num">02 · Savings Opportunities</div><div class="ftitle">Opportunity paired with potential ₹/year savings</div><div class="fdesc">Every identified opportunity carries its own MWh and ₹ Cr-per-year savings estimate.</div></div>
+      <div class="feature"><div class="num">03 · Plant Benchmarking</div><div class="ftitle">Plant Wise Specific Energy ranking</div><div class="fdesc">kWh per tonne of steel, ranked across plants to find the outlier.</div></div>
+      <div class="feature"><div class="num">Business Value</div><div class="ftitle">From cost reporting to a prioritized action list</div><div class="fdesc">A rupees-per-year figure next to every opportunity turns energy management into a ranked investment decision.</div></div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">19</div>
+</section>
+
+<!-- ============================================================ DIVIDER — PART V ============================================================ -->
+<section class="page divider">
+  <div class="divider-index">Part V</div>
+  <div class="divider-title">Spatial Intelligence &amp; Administration</div>
+  <div class="divider-desc">The platform's signature capability — a live, navigable 3D digital twin of the factory floor — and the branding controls that make FactoryOS a true multi-tenant product.</div>
+  <div class="divider-modules">
+    <span>01 — Executive Intelligence</span>
+    <span>02 — Order Management</span>
+    <span>03 — Production</span>
+    <span>04 — Asset &amp; Machine Mgmt</span>
+    <span>05 — Workforce</span>
+    <span>06 — Safety &amp; Compliance</span>
+    <span>07 — Sustainability</span>
+    <span>08 — Quality</span>
+    <span>09 — Utilities</span>
+    <span class="active">10 — Spatial Intelligence</span>
+    <span class="active">11 — Administration</span>
+  </div>
+  <div class="divider-rule"></div>
+</section>
+
+<!-- ============================================================ 3D FACTORY MONITORING (FLAGSHIP) ============================================================ -->
+<section class="page">
+  <div class="module-page layout-a">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">10</span><span class="module-name">Spatial Intelligence</span></div>
+      <div class="module-route">/d/factory-3d</div>
+    </div>
+    <div class="module-title">3D Factory Monitoring &amp; Surveillance</div>
+    <div class="module-desc">A live, navigable 3D digital twin of the factory floor — exactly where every tracked worker, CCTV camera, WiFi access point, and transport asset is right now.</div>
+
+    <div class="shot-frame" style="width:auto; display:table; margin:0 auto 26px;"><img src="../screenshots/13-factory-3d-viewport.png" style="height:600px;width:auto;" /></div>
+
+    <div class="feature-grid">
+      <div class="feature"><div class="num">01 · Four View Modes</div><div class="ftitle">Perspective · Top-Down · Cross-Section · VR</div><div class="fdesc">Orbit-controllable 3D model with a cutaway view and WebXR immersive mode, hardware permitting.</div></div>
+      <div class="feature"><div class="num">02 · Click-to-Focus Presence</div><div class="ftitle">Worker list → camera flies to location</div><div class="fdesc">Click any name in the live Worker Presence list and the 3D camera flies to their exact position in the model.</div></div>
+      <div class="feature"><div class="num">03 · Zone &amp; Logistics Intelligence</div><div class="ftitle">Restricted-zone alerts, per-zone production cards, live logistics</div><div class="fdesc">Headcount, productivity, and efficiency per zone, plus deliveries, train runs, truck trips, and forklift activity today.</div></div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">21</div>
+</section>
+
+<!-- ============================================================ SETTINGS / ADMINISTRATION ============================================================ -->
+<section class="page">
+  <div class="module-page layout-b">
+    <div class="module-eyebrow-row">
+      <div class="module-eyebrow"><span class="badge">11</span><span class="module-name">Administration</span></div>
+      <div class="module-route">/settings</div>
+    </div>
+    <div class="module-title">Settings</div>
+    <div class="module-desc">White-label branding and theme administration — the mechanism that lets one codebase serve any manufacturing customer under its own identity.</div>
+
+    <div class="split">
+      <div class="split-shot"><div class="shot-frame"><img src="../screenshots/14-settings-viewport.png" style="height:600px;width:auto;" /></div></div>
+      <div class="split-text">
+        <div class="side-block workflow">
+          <div class="label">User Workflow</div>
+          <ol>
+            <li>Open Settings when onboarding a new customer.</li>
+            <li>Replace the brand name, tagline, logo, and accent color.</li>
+            <li>Every one of the 13 live dashboards re-renders under the new identity instantly — no reload required.</li>
+          </ol>
+        </div>
+        <div class="side-block value">
+          <div class="label">Business Value</div>
+          <p>This is what makes FactoryOS a genuine multi-tenant SaaS product rather than a single-customer build — rebranding is a two-minute in-app task, not an engineering request.</p>
+        </div>
+        <div class="side-block">
+          <div class="label">Also Included</div>
+          <p>Live light/dark theme toggle, with every status color intentionally holding its hue across both modes so charts read identically either way.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">22</div>
+</section>
+
+<!-- ============================================================ DESIGN SYSTEM ============================================================ -->
+<section class="page">
+  <div class="content-page">
+    <div class="content-header">
+      <div>
+        <div class="content-kicker">User Experience &amp; Design</div>
+        <div class="content-title">One visual system, every screen</div>
+      </div>
+      <div class="content-lede">A single centralized token file drives color, radius, shadow, and type across all thirteen dashboards and the 3D layer — nothing is restyled per screen.</div>
+    </div>
+
+    <div class="ds-grid">
+      <div>
+        <div class="side-block">
+          <div class="label">Brand &amp; Status Palette</div>
+          <div class="swatch-row">
+            <div class="swatch"><div class="chip" style="background:#1e56c9;"></div><div class="hex">#1E56C9</div><div class="name">Brand Blue</div></div>
+            <div class="swatch"><div class="chip" style="background:#0a1a3a;"></div><div class="hex">#0A1A3A</div><div class="name">Navy 950</div></div>
+            <div class="swatch"><div class="chip" style="background:#16a34a;"></div><div class="hex">#16A34A</div><div class="name">Status Good</div></div>
+            <div class="swatch"><div class="chip" style="background:#f59e0b;"></div><div class="hex">#F59E0B</div><div class="name">Status Warn</div></div>
+            <div class="swatch"><div class="chip" style="background:#dc2626;"></div><div class="hex">#DC2626</div><div class="name">Status Bad</div></div>
+            <div class="swatch"><div class="chip" style="background:#7c3aed;"></div><div class="hex">#7C3AED</div><div class="name">Status Purple</div></div>
+            <div class="swatch"><div class="chip" style="background:#0d9488;"></div><div class="hex">#0D9488</div><div class="name">Status Teal</div></div>
+            <div class="swatch"><div class="chip" style="background:#2563eb;"></div><div class="hex">#2563EB</div><div class="name">Status Info</div></div>
+          </div>
+          <p style="margin-top:14px; font-size:11.5px; color:var(--color-muted); line-height:1.6;">Every status color keeps the same hue in light and dark mode — only backgrounds flip — so a chart reads identically regardless of theme.</p>
+        </div>
+
+        <div class="type-sample">
+          <div class="label" style="font-size:10px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:var(--color-brand-blue); margin-bottom:8px;">Typography — Inter</div>
+          <div class="huge">82%</div>
+          <div class="card-title-sample">Factory Efficiency</div>
+          <div class="body-sample">Body copy sits at 12–12.5px for density; card titles are bold, uppercase, and letter-spaced to separate structure from data at a glance — tuned for a control-room monitor, not a marketing page.</div>
+        </div>
+
+        <div class="side-block" style="margin-top:22px;">
+          <div class="label">Data Table — zebra striping, aligned columns, inline status</div>
+          <table style="width:100%; border-collapse:collapse; font-size:11px; margin-top:8px;">
+            <thead>
+              <tr style="background:var(--color-header-bg); color:#fff;">
+                <th style="text-align:left; padding:7px 10px; font-size:9.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.04em;">Machine ID</th>
+                <th style="text-align:left; padding:7px 10px; font-size:9.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.04em;">Status</th>
+                <th style="text-align:right; padding:7px 10px; font-size:9.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.04em;">Health</th>
+                <th style="text-align:right; padding:7px 10px; font-size:9.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.04em;">Vibration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--color-border);"><td style="padding:6px 10px; font-weight:700; font-family:monospace; color:var(--color-navy-950);">MC-0001</td><td style="padding:6px 10px;"><span class="status-badge good">Running</span></td><td style="padding:6px 10px; text-align:right; font-weight:700; color:var(--color-status-good);">96%</td><td style="padding:6px 10px; text-align:right; color:var(--color-navy-900);">2.1</td></tr>
+              <tr style="border-bottom:1px solid var(--color-border); background:#f8fafc;"><td style="padding:6px 10px; font-weight:700; font-family:monospace; color:var(--color-navy-950);">MC-0005</td><td style="padding:6px 10px;"><span class="status-badge bad">Breakdown</span></td><td style="padding:6px 10px; text-align:right; font-weight:700; color:var(--color-status-bad);">32%</td><td style="padding:6px 10px; text-align:right; font-weight:700; color:var(--color-status-bad);">6.5</td></tr>
+              <tr><td style="padding:6px 10px; font-weight:700; font-family:monospace; color:var(--color-navy-950);">MC-0007</td><td style="padding:6px 10px;"><span class="status-badge info">Maintenance</span></td><td style="padding:6px 10px; text-align:right; color:var(--color-muted);">—</td><td style="padding:6px 10px; text-align:right; color:var(--color-navy-900);">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <div class="label" style="font-size:10px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:var(--color-brand-blue); margin-bottom:8px;">Core Components</div>
+        <div class="comp-sample">
+          <div style="font-size:10px; font-weight:800; text-transform:uppercase; color:var(--color-muted); margin-bottom:8px;">Status Badge</div>
+          <div class="badge-row" style="margin-bottom:16px;">
+            <span class="status-badge good">Running</span>
+            <span class="status-badge warn">Idle</span>
+            <span class="status-badge bad">Breakdown</span>
+            <span class="status-badge info">Maintenance</span>
+          </div>
+          <div style="font-size:10px; font-weight:800; text-transform:uppercase; color:var(--color-muted); margin-bottom:8px;">KPI Card</div>
+          <div style="display:flex; gap:10px; align-items:center; margin-bottom:16px;">
+            <div style="width:40px;height:40px;border-radius:999px;background:var(--color-status-good-bg);display:flex;align-items:center;justify-content:center;color:var(--color-status-good);font-weight:800;">✓</div>
+            <div>
+              <div style="font-size:10px;font-weight:800;text-transform:uppercase;color:var(--color-status-good);letter-spacing:0.04em;">Overall Availability</div>
+              <div style="font-size:20px;font-weight:800;color:var(--color-navy-950);">96.5%</div>
+            </div>
+          </div>
+          <div style="font-size:10px; font-weight:800; text-transform:uppercase; color:var(--color-muted); margin-bottom:8px;">Card Container</div>
+          <p style="font-size:11px; color:var(--color-muted); line-height:1.6;">1rem radius, 1px hairline border, two-layer soft shadow — the single `.card` surface every panel, table, and chart container in the product uses.</p>
+        </div>
+
+        <div class="side-block" style="margin-top:22px;">
+          <div class="label">Light / Dark Mode — same hue, different surface</div>
+          <p style="font-size:11px; color:var(--color-muted); line-height:1.5; margin-bottom:10px;">Toggled live from Settings. Status colors are intentionally identical in both modes — only page and card backgrounds flip.</p>
+          <div style="display:flex; gap:12px;">
+            <div style="flex:1; background:#ffffff; border:1px solid #e4e8f2; border-radius:10px; padding:14px; box-shadow:var(--shadow-card);">
+              <div style="font-size:9px; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; color:#64748b; margin-bottom:8px;">Light</div>
+              <div style="font-size:9.5px; font-weight:800; text-transform:uppercase; color:#0a1a3a; margin-bottom:6px;">Machine Health</div>
+              <div style="display:flex; gap:6px;">
+                <span style="font-size:9.5px; font-weight:800; padding:3px 8px; border-radius:6px; background:#e9f8ef; color:#16a34a;">Running</span>
+                <span style="font-size:9.5px; font-weight:800; padding:3px 8px; border-radius:6px; background:#fdeaea; color:#dc2626;">Breakdown</span>
+              </div>
+            </div>
+            <div style="flex:1; background:#131c2e; border:1px solid #243049; border-radius:10px; padding:14px; box-shadow:0 1px 2px rgba(0,0,0,0.5);">
+              <div style="font-size:9px; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; color:#8b96ad; margin-bottom:8px;">Dark</div>
+              <div style="font-size:9.5px; font-weight:800; text-transform:uppercase; color:#eef2f9; margin-bottom:6px;">Machine Health</div>
+              <div style="display:flex; gap:6px;">
+                <span style="font-size:9.5px; font-weight:800; padding:3px 8px; border-radius:6px; background:#123423; color:#16a34a;">Running</span>
+                <span style="font-size:9.5px; font-weight:800; padding:3px 8px; border-radius:6px; background:#3a1a1a; color:#dc2626;">Breakdown</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-block value" style="margin-top:22px;">
+          <div class="label">3D Layer Consistency</div>
+          <p>The 3D Factory Monitoring view reuses these same status tokens for worker-avatar and device-marker colors, so the spatial view and the 2D dashboards read as one visual system, not two products bolted together.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">23</div>
+</section>
+
+<!-- ============================================================ PLATFORM WORKFLOWS ============================================================ -->
+<section class="page">
+  <div class="content-page">
+    <div class="content-header">
+      <div>
+        <div class="content-kicker">Platform Workflows</div>
+        <div class="content-title">From signal to action</div>
+      </div>
+      <div class="content-lede">Two representative end-to-end workflows the platform supports today, as implemented — not aspirational.</div>
+    </div>
+
+    <div style="margin-bottom:12px;">
+      <div style="font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:var(--color-brand-blue); margin-bottom:14px;">Workflow 1 — Restricted-Zone Response (Spatial Intelligence)</div>
+      <div class="workflow-steps">
+        <div class="wstep"><div class="wnum">1</div><div class="wtitle">Alert fires</div><div class="wdesc">A worker enters the Chemical Store restricted zone; the 3D Factory Monitoring Active Alerts feed logs it in real time.</div></div>
+        <div class="wstep"><div class="wnum">2</div><div class="wtitle">Operator clicks the name</div><div class="wdesc">The flagged worker's name is clicked in the live Worker Presence list.</div></div>
+        <div class="wstep"><div class="wnum">3</div><div class="wtitle">Camera flies to location</div><div class="wdesc">The 3D camera animates to the worker's exact position in the model for visual confirmation.</div></div>
+        <div class="wstep"><div class="wnum">4</div><div class="wtitle">Confirm via CCTV</div><div class="wdesc">The nearest camera marker's online status is checked to confirm footage is available.</div></div>
+        <div class="wstep"><div class="wnum">5</div><div class="wtitle">Respond</div><div class="wdesc">Floor operations dispatches a response with full spatial context already established.</div></div>
+      </div>
+    </div>
+
+    <div>
+      <div style="font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:var(--color-brand-blue); margin-bottom:14px;">Workflow 2 — New Customer Onboarding (Administration)</div>
+      <div class="workflow-steps">
+        <div class="wstep"><div class="wnum">1</div><div class="wtitle">Open Settings</div><div class="wdesc">An administrator onboarding a new customer navigates to the Settings page.</div></div>
+        <div class="wstep"><div class="wnum">2</div><div class="wtitle">Set brand identity</div><div class="wdesc">Brand name, tagline, and full/legal name are entered.</div></div>
+        <div class="wstep"><div class="wnum">3</div><div class="wtitle">Upload logo</div><div class="wdesc">The customer's logo replaces the default mark.</div></div>
+        <div class="wstep"><div class="wnum">4</div><div class="wtitle">Choose theme</div><div class="wdesc">Accent color and light/dark mode are set to match the customer's brand.</div></div>
+        <div class="wstep"><div class="wnum">5</div><div class="wtitle">Live everywhere</div><div class="wdesc">All 13 dashboards re-render under the new identity instantly — no redeploy.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer-brand"><span class="dot"></span>FactoryOS</div>
+  <div class="page-number">24</div>
+</section>
+
+<!-- ============================================================ CLOSING ============================================================ -->
+<section class="page closing">
+  <div class="closing-logo">
+    <div class="cover-logo-mark"><span></span><span></span><span></span></div>
+    <div class="cover-logo-text" style="text-align:left;">
+      <div class="name">FactoryOS</div>
+      <div class="tagline">Powered by Intelligence</div>
+    </div>
+  </div>
+  <div class="closing-title">Eleven modules. Thirteen live dashboards. One digital twin of your factory floor.</div>
+  <div class="closing-sub">FactoryOS unifies production, reliability, workforce, safety, quality, sustainability, energy, and spatial intelligence under a single, white-label-ready platform — built to extend to a real data pipeline without a UI rewrite.</div>
+  <div class="closing-meta">
+    <div>Document prepared November 2026</div>
+    <div>Client-Facing Capability Overview</div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,1320 @@
+{
+  "capturedAt": "2026-11-02T19:57:35.700Z",
+  "pages": [
+    {
+      "order": 1,
+      "slug": "overview",
+      "file": "01-ceo-scorecard",
+      "title": "CEO Live Scorecard",
+      "module": "Executive Intelligence",
+      "url": "http://localhost:5173/#/d/overview",
+      "screenshots": {
+        "viewport": "01-ceo-scorecard-viewport.png",
+        "full": "01-ceo-scorecard-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Factory Overview",
+          "subtitle": ""
+        },
+        {
+          "title": "Factory Status",
+          "subtitle": ""
+        },
+        {
+          "title": "Top Alerts",
+          "subtitle": ""
+        },
+        {
+          "title": "Today's Production",
+          "subtitle": ""
+        },
+        {
+          "title": "Live Trends",
+          "subtitle": "(Last 8 Hours)"
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Revenue Today",
+          "value": "₹ 2.06 Cr"
+        },
+        {
+          "label": "Profit Today",
+          "value": "₹ 44.00 L"
+        },
+        {
+          "label": "Gross Margin",
+          "value": "19.8%"
+        },
+        {
+          "label": "Factory Efficiency",
+          "value": "82%"
+        },
+        {
+          "label": "Line Efficiency",
+          "value": "81%"
+        },
+        {
+          "label": "OTIF Delivery",
+          "value": "96%"
+        },
+        {
+          "label": "Reject Rate",
+          "value": "0.8%"
+        },
+        {
+          "label": "Absenteeism",
+          "value": "2.1%"
+        },
+        {
+          "label": "Machine Availability",
+          "value": "95%"
+        },
+        {
+          "label": "Energy Cost / pc",
+          "value": "₹ 2.62"
+        }
+      ],
+      "tableHeaders": [],
+      "buttons": [],
+      "sidebarActive": "1CEO Live Scorecard",
+      "consoleErrors": []
+    },
+    {
+      "order": 2,
+      "slug": "orders",
+      "file": "02-order-status",
+      "title": "Order Status",
+      "module": "Order Management",
+      "url": "http://localhost:5173/#/d/orders",
+      "screenshots": {
+        "viewport": "02-order-status-viewport.png",
+        "full": "02-order-status-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Buyer Wise Orders",
+          "subtitle": ""
+        },
+        {
+          "title": "Order Tracking - Live Status",
+          "subtitle": ""
+        },
+        {
+          "title": "Delay Risk Summary",
+          "subtitle": ""
+        },
+        {
+          "title": "Top 5 High Risk Orders",
+          "subtitle": ""
+        },
+        {
+          "title": "AI Prediction & Recommendation",
+          "subtitle": ""
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Total Orders",
+          "value": "125"
+        },
+        {
+          "label": "Total Quantity",
+          "value": "12,54,000"
+        },
+        {
+          "label": "Completed",
+          "value": "7,82,000"
+        },
+        {
+          "label": "In Progress",
+          "value": "4,21,500"
+        },
+        {
+          "label": "Pending",
+          "value": "50,500"
+        },
+        {
+          "label": "On Time Delivery",
+          "value": "96.3%"
+        }
+      ],
+      "tableHeaders": [
+        "Buyer",
+        "PO Number",
+        "Style Number",
+        "Order Qty (PCS)",
+        "Completed (PCS)",
+        "Balance (PCS)",
+        "% Complete",
+        "Expected Dispatch",
+        "Risk %",
+        "Delay Prediction",
+        "Current Line",
+        "Current Operator",
+        "Efficiency",
+        "Predicted Delay",
+        "Action Suggested"
+      ],
+      "buttons": [
+        "View Detailed AI Insights"
+      ],
+      "sidebarActive": "2Order Status",
+      "consoleErrors": []
+    },
+    {
+      "order": 3,
+      "slug": "production-line",
+      "file": "03-production-line",
+      "title": "Production Line",
+      "module": "Production",
+      "url": "http://localhost:5173/#/d/production-line",
+      "screenshots": {
+        "viewport": "03-production-line-viewport.png",
+        "full": "03-production-line-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Line Summary",
+          "subtitle": ""
+        },
+        {
+          "title": "Quick Actions",
+          "subtitle": ""
+        },
+        {
+          "title": "Line Status Overview",
+          "subtitle": ""
+        },
+        {
+          "title": "Plant Layout",
+          "subtitle": "Line Performance Map"
+        },
+        {
+          "title": "Top Alerts",
+          "subtitle": ""
+        },
+        {
+          "title": "Line Performance Trend",
+          "subtitle": "(Avg)"
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Total Lines",
+          "value": "40"
+        },
+        {
+          "label": "Avg Line Efficiency",
+          "value": "81%"
+        },
+        {
+          "label": "Total Output Today",
+          "value": "58,750"
+        },
+        {
+          "label": "Total Target Today",
+          "value": "72,000"
+        },
+        {
+          "label": "Lines Below Target",
+          "value": "9"
+        },
+        {
+          "label": "Operators At Work",
+          "value": "1,248"
+        }
+      ],
+      "tableHeaders": [],
+      "buttons": [],
+      "sidebarActive": "3Production Line",
+      "consoleErrors": []
+    },
+    {
+      "order": 4,
+      "slug": "machine-health",
+      "file": "04-machine-health",
+      "title": "Machine Health",
+      "module": "Asset & Machine Management",
+      "url": "http://localhost:5173/#/d/machine-health",
+      "screenshots": {
+        "viewport": "04-machine-health-viewport.png",
+        "full": "04-machine-health-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Machine Utilization",
+          "subtitle": ""
+        },
+        {
+          "title": "OEE Overview",
+          "subtitle": "(All Machines)"
+        },
+        {
+          "title": "Machine Health List",
+          "subtitle": "(Real Time)"
+        },
+        {
+          "title": "Top Alerts",
+          "subtitle": ""
+        },
+        {
+          "title": "Health Score Breakdown",
+          "subtitle": ""
+        },
+        {
+          "title": "Machine Age Profile",
+          "subtitle": ""
+        },
+        {
+          "title": "Health Trend",
+          "subtitle": "(Last 7 Days)"
+        },
+        {
+          "title": "Breakdown Trend",
+          "subtitle": "(Last 7 Days)"
+        },
+        {
+          "title": "RUL Distribution",
+          "subtitle": "Remaining Useful Life"
+        },
+        {
+          "title": "Top 5 Machine Downtime Reason",
+          "subtitle": "(Today)"
+        },
+        {
+          "title": "Key Insights",
+          "subtitle": ""
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Total Machines",
+          "value": "980"
+        },
+        {
+          "label": "Running",
+          "value": "912"
+        },
+        {
+          "label": "Idle",
+          "value": "38"
+        },
+        {
+          "label": "Breakdown",
+          "value": "17"
+        },
+        {
+          "label": "Maintenance",
+          "value": "13"
+        },
+        {
+          "label": "Overall Availability",
+          "value": "96.5%"
+        }
+      ],
+      "tableHeaders": [
+        "Machine ID",
+        "Line",
+        "Model",
+        "Status",
+        "Health Score",
+        "Running Hours",
+        "Stitch Count",
+        "Needle Count",
+        "Vibration (mm/s)",
+        "Temp (°C)",
+        "Last Service",
+        "RUL (Days)"
+      ],
+      "buttons": [],
+      "sidebarActive": "4Machine Health",
+      "consoleErrors": []
+    },
+    {
+      "order": 5,
+      "slug": "operator",
+      "file": "05-operator",
+      "title": "Operator",
+      "module": "Workforce",
+      "url": "http://localhost:5173/#/d/operator",
+      "screenshots": {
+        "viewport": "05-operator-viewport.png",
+        "full": "05-operator-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Operator Distribution by Skill",
+          "subtitle": ""
+        },
+        {
+          "title": "Operator Performance List",
+          "subtitle": "(Real Time)"
+        },
+        {
+          "title": "Happiness Index Breakdown",
+          "subtitle": ""
+        },
+        {
+          "title": "Today's Top Performers",
+          "subtitle": ""
+        },
+        {
+          "title": "Operator Performance Trend",
+          "subtitle": "(Last 7 Days)"
+        },
+        {
+          "title": "Efficiency Distribution",
+          "subtitle": "No. of Operators"
+        },
+        {
+          "title": "Reject Rate by Operator Group",
+          "subtitle": ""
+        },
+        {
+          "title": "Incentive Payout Today",
+          "subtitle": ""
+        },
+        {
+          "title": "Key Insights",
+          "subtitle": ""
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Total Operators",
+          "value": "1,248"
+        },
+        {
+          "label": "Present",
+          "value": "1,188"
+        },
+        {
+          "label": "Absent",
+          "value": "60"
+        },
+        {
+          "label": "Avg Operator Efficiency",
+          "value": "82.8%"
+        },
+        {
+          "label": "Top Performers",
+          "value": "178"
+        },
+        {
+          "label": "Happiness Index",
+          "value": "78.3 /100"
+        }
+      ],
+      "tableHeaders": [
+        "Emp ID",
+        "Operator Name",
+        "Line",
+        "Skill",
+        "Efficiency (%)",
+        "Target (%)",
+        "Output (Pcs)",
+        "Reject (%)",
+        "Attendance",
+        "Incentive (₹) Today",
+        "Happiness Score",
+        "Status"
+      ],
+      "buttons": [],
+      "sidebarActive": "5Operator",
+      "consoleErrors": []
+    },
+    {
+      "order": 7,
+      "slug": "safety",
+      "file": "06-safety-incident",
+      "title": "Safety & Incident",
+      "module": "Safety & Compliance",
+      "url": "http://localhost:5173/#/d/safety",
+      "screenshots": {
+        "viewport": "06-safety-incident-viewport.png",
+        "full": "06-safety-incident-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Incident Summary",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Incident Details",
+          "subtitle": "(Real Time)"
+        },
+        {
+          "title": "Incidents by Location",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "LTIFR Trend",
+          "subtitle": "(12 Mo)"
+        },
+        {
+          "title": "Top 5 Incident Causes",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Safety Observations",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Severity Distribution",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Near Miss Reporting",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Key Insights",
+          "subtitle": ""
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Total Incidents (YTD)",
+          "value": "32"
+        },
+        {
+          "label": "LTIFR (YTD)",
+          "value": "0.44"
+        },
+        {
+          "label": "TRIFR (YTD)",
+          "value": "1.12"
+        },
+        {
+          "label": "MTC (YTD)",
+          "value": "256"
+        },
+        {
+          "label": "Safety Observations",
+          "value": "1,842"
+        },
+        {
+          "label": "Safety Training (Hrs)",
+          "value": "3,420"
+        }
+      ],
+      "tableHeaders": [
+        "Incident ID",
+        "Date & Time",
+        "Location / Area",
+        "Incident Type",
+        "Severity",
+        "Description",
+        "LTI Potential",
+        "Status",
+        "Days Open"
+      ],
+      "buttons": [],
+      "sidebarActive": "7Safety & Incident",
+      "consoleErrors": []
+    },
+    {
+      "order": 8,
+      "slug": "environment",
+      "file": "07-environment",
+      "title": "Environment & Sustainability",
+      "module": "Sustainability",
+      "url": "http://localhost:5173/#/d/environment",
+      "screenshots": {
+        "viewport": "07-environment-viewport.png",
+        "full": "07-environment-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Emission Summary",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Water Consumption Breakdown",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Environmental Parameters",
+          "subtitle": "(Real Time)"
+        },
+        {
+          "title": "Carbon Footprint Trend",
+          "subtitle": "tCO2 / t Steel"
+        },
+        {
+          "title": "Renewable Energy Usage",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "CO2 Emission Trend",
+          "subtitle": "(12 Mo)"
+        },
+        {
+          "title": "Water Consumption Trend",
+          "subtitle": "(12 Mo)"
+        },
+        {
+          "title": "Waste Generation Trend",
+          "subtitle": "(12 Mo)"
+        },
+        {
+          "title": "Energy Mix",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Key Insights",
+          "subtitle": ""
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Total CO2 Emission (YTD)",
+          "value": "1,24,560 T"
+        },
+        {
+          "label": "Specific CO2 Emission",
+          "value": "1.82 t/t"
+        },
+        {
+          "label": "Water Consumption (YTD)",
+          "value": "1,24,850 KL"
+        },
+        {
+          "label": "Water Recirculation",
+          "value": "92.6%"
+        },
+        {
+          "label": "Waste Generated (YTD)",
+          "value": "18,425 T"
+        },
+        {
+          "label": "Waste Utilization",
+          "value": "95.3%"
+        },
+        {
+          "label": "Green Energy Usage",
+          "value": "28.6%"
+        }
+      ],
+      "tableHeaders": [
+        "Parameter",
+        "Location",
+        "Unit",
+        "Real Time Value",
+        "Limit",
+        "Status",
+        "vs Yesterday"
+      ],
+      "buttons": [],
+      "sidebarActive": "8Environment & Sustainability",
+      "consoleErrors": []
+    },
+    {
+      "order": 9,
+      "slug": "quality",
+      "file": "08-quality",
+      "title": "Quality Management",
+      "module": "Quality",
+      "url": "http://localhost:5173/#/d/quality",
+      "screenshots": {
+        "viewport": "08-quality-viewport.png",
+        "full": "08-quality-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Quality Score Trend",
+          "subtitle": "(12 Mo)"
+        },
+        {
+          "title": "Rejection Breakdown",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Quality Inspection Summary",
+          "subtitle": "(Real Time)"
+        },
+        {
+          "title": "Customer Complaints",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Top Defect Types",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Quality Cost",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "First Pass Yield Trend",
+          "subtitle": "(12 Mo)"
+        },
+        {
+          "title": "Process Capability Trend",
+          "subtitle": "Cpk (12 Mo)"
+        },
+        {
+          "title": "Rejection % Trend",
+          "subtitle": "(12 Mo)"
+        },
+        {
+          "title": "Key Insights",
+          "subtitle": ""
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Overall Quality Score (YTD)",
+          "value": "89.3%"
+        },
+        {
+          "label": "First Pass Yield (YTD)",
+          "value": "92.1%"
+        },
+        {
+          "label": "Total Rejections (YTD)",
+          "value": "2,458 MT"
+        },
+        {
+          "label": "Customer Complaints (YTD)",
+          "value": "18"
+        },
+        {
+          "label": "Process Capability (Cpk)",
+          "value": "1.46"
+        },
+        {
+          "label": "QC Inspections (YTD)",
+          "value": "45,632"
+        }
+      ],
+      "tableHeaders": [
+        "Line / Area",
+        "Product",
+        "Grade",
+        "Production (MT)",
+        "Inspected (MT)",
+        "First Pass Yield (%)",
+        "Rejection (MT)",
+        "Rejection (%)",
+        "Cpk",
+        "Quality Score (%)",
+        "Status"
+      ],
+      "buttons": [],
+      "sidebarActive": "9Quality Management",
+      "consoleErrors": []
+    },
+    {
+      "order": 10,
+      "slug": "production-ops",
+      "file": "09-production-ops",
+      "title": "Production & Operations",
+      "module": "Production",
+      "url": "http://localhost:5173/#/d/production-ops",
+      "screenshots": {
+        "viewport": "09-production-ops-viewport.png",
+        "full": "09-production-ops-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Production by Plant",
+          "subtitle": "(MTD)"
+        },
+        {
+          "title": "Production Mix",
+          "subtitle": "(MTD)"
+        },
+        {
+          "title": "Real Time Production Summary",
+          "subtitle": ""
+        },
+        {
+          "title": "Overall OEE Breakdown",
+          "subtitle": ""
+        },
+        {
+          "title": "Downtime Summary",
+          "subtitle": "(MTD)"
+        },
+        {
+          "title": "Target Achievement",
+          "subtitle": "(MTD)"
+        },
+        {
+          "title": "Production Trend",
+          "subtitle": "(Last 7 Days)"
+        },
+        {
+          "title": "Hourly Production Today",
+          "subtitle": "(MT)"
+        },
+        {
+          "title": "Cumulative Production",
+          "subtitle": "(MTD)"
+        },
+        {
+          "title": "OEE Trend",
+          "subtitle": "(Last 7 Days)"
+        },
+        {
+          "title": "OEE by Unit",
+          "subtitle": "(MTD)"
+        },
+        {
+          "title": "Downtime Trend",
+          "subtitle": "(Last 7 Days)"
+        },
+        {
+          "title": "Production Plan vs Actual",
+          "subtitle": "(MTD)"
+        },
+        {
+          "title": "Top 5 Downtime Reasons",
+          "subtitle": "(Hrs)"
+        },
+        {
+          "title": "Key Insights",
+          "subtitle": ""
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Total Production (MTD)",
+          "value": "458,399 MT"
+        },
+        {
+          "label": "Production Today (MT)",
+          "value": "15,820 MT"
+        },
+        {
+          "label": "Production Target (MT)",
+          "value": "16,500 MT"
+        },
+        {
+          "label": "Overall OEE",
+          "value": "78.9%"
+        },
+        {
+          "label": "Planned Downtime (Hrs)",
+          "value": "24.5 Hrs"
+        },
+        {
+          "label": "Unplanned Downtime (Hrs)",
+          "value": "5.6 Hrs"
+        }
+      ],
+      "tableHeaders": [
+        "Unit / Shop",
+        "Product",
+        "Grade",
+        "Target (MT)",
+        "Actual (MT)",
+        "Achievement (%)",
+        "OEE (%)",
+        "Status",
+        "vs Yesterday (%)"
+      ],
+      "buttons": [],
+      "sidebarActive": "10Production & Operations",
+      "consoleErrors": []
+    },
+    {
+      "order": 11,
+      "slug": "energy-utilities",
+      "file": "10-energy-utilities",
+      "title": "Energy & Utilities",
+      "module": "Utilities",
+      "url": "http://localhost:5173/#/d/energy-utilities",
+      "screenshots": {
+        "viewport": "10-energy-utilities-viewport.png",
+        "full": "10-energy-utilities-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Energy Mix",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Cost Breakdown",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Utility Consumption Summary",
+          "subtitle": "(Real Time)"
+        },
+        {
+          "title": "Energy Cost Trend",
+          "subtitle": "(₹ Cr)"
+        },
+        {
+          "title": "Specific Energy Trend",
+          "subtitle": "(Last 7 Days)"
+        },
+        {
+          "title": "Daily Energy Consumption",
+          "subtitle": "(MWh)"
+        },
+        {
+          "title": "Energy Cost Trend",
+          "subtitle": "(Last 12 Months)"
+        },
+        {
+          "title": "Energy Savings",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Energy Performance vs Target",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Plant Wise Specific Energy",
+          "subtitle": "(kWh / t Steel)"
+        },
+        {
+          "title": "Alerts & Notifications",
+          "subtitle": ""
+        },
+        {
+          "title": "Energy Savings Opportunities",
+          "subtitle": ""
+        },
+        {
+          "title": "Key Insights",
+          "subtitle": ""
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Total Energy (YTD)",
+          "value": "1,24,560 MWh"
+        },
+        {
+          "label": "Energy Cost (YTD)",
+          "value": "₹ 12.48 Cr"
+        },
+        {
+          "label": "Specific Energy (YTD)",
+          "value": "523 kWh/t"
+        },
+        {
+          "label": "Water Consumption (YTD)",
+          "value": "1,24,850 KL"
+        },
+        {
+          "label": "Steam Consumption (YTD)",
+          "value": "2,45,310 MT"
+        },
+        {
+          "label": "Fuel Consumption (YTD)",
+          "value": "18,450 MT"
+        },
+        {
+          "label": "Utilization Index (YTD)",
+          "value": "91.2%"
+        }
+      ],
+      "tableHeaders": [
+        "Utility",
+        "Unit",
+        "Today",
+        "Yesterday",
+        "MTD (This Month)",
+        "LY MTD",
+        "Variance (%)",
+        "YTD",
+        "LYTD",
+        "Status",
+        "Opportunity",
+        "Area",
+        "Potential Savings (MWh/Yr)",
+        "Potential Savings (₹ Cr/Yr)"
+      ],
+      "buttons": [],
+      "sidebarActive": "11Energy & Utilities",
+      "consoleErrors": []
+    },
+    {
+      "order": 12,
+      "slug": "maintenance",
+      "file": "11-maintenance",
+      "title": "Maintenance Performance",
+      "module": "Asset & Machine Management",
+      "url": "http://localhost:5173/#/d/maintenance",
+      "screenshots": {
+        "viewport": "11-maintenance-viewport.png",
+        "full": "11-maintenance-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Maintenance Cost Breakdown",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Work Order Status",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Maintenance Summary",
+          "subtitle": "(Real Time)"
+        },
+        {
+          "title": "Breakdowns by Category",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Top 5 Repeating Breakdown Assets",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "PM Compliance Trend",
+          "subtitle": "(12 Mo)"
+        },
+        {
+          "title": "MTTR Trend",
+          "subtitle": "(12 Mo)"
+        },
+        {
+          "title": "MTBF Trend",
+          "subtitle": "(12 Mo)"
+        },
+        {
+          "title": "Cost Trend",
+          "subtitle": "(12 Mo)"
+        },
+        {
+          "title": "Asset Availability",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Scheduled vs Unscheduled",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Planned Shutdowns / Turnaround",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Spares Consumption",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Critical Assets Health",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Key Insights",
+          "subtitle": ""
+        }
+      ],
+      "kpis": [
+        {
+          "label": "MTTR (YTD)",
+          "value": "4.27 Hrs"
+        },
+        {
+          "label": "MTBF (YTD)",
+          "value": "182.5 Hrs"
+        },
+        {
+          "label": "PM Compliance (YTD)",
+          "value": "91.6%"
+        },
+        {
+          "label": "Breakdowns (YTD)",
+          "value": "356"
+        },
+        {
+          "label": "Maintenance Cost (YTD)",
+          "value": "₹ 18.65 Cr"
+        },
+        {
+          "label": "Asset Availability (YTD)",
+          "value": "94.8%"
+        }
+      ],
+      "tableHeaders": [
+        "Area / Shop",
+        "Total Assets",
+        "PM Plan",
+        "PM Completed",
+        "PM Compliance %",
+        "Breakdowns",
+        "MTTR (Hrs)",
+        "MTBF (Hrs)",
+        "Cost (₹ Cr)",
+        "Status",
+        "Shutdown",
+        "Area",
+        "Start Date",
+        "End Date",
+        "Progress"
+      ],
+      "buttons": [],
+      "sidebarActive": "12Maintenance Performance",
+      "consoleErrors": []
+    },
+    {
+      "order": 13,
+      "slug": "hse",
+      "file": "12-hse",
+      "title": "HSE Performance",
+      "module": "Safety & Compliance",
+      "url": "http://localhost:5173/#/d/hse",
+      "screenshots": {
+        "viewport": "12-hse-viewport.png",
+        "full": "12-hse-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Incident Breakdown",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "HSE Performance by Plant",
+          "subtitle": "(Real Time)"
+        },
+        {
+          "title": "HSE Performance Index",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Incident Trend",
+          "subtitle": "(Last 12 Months)"
+        },
+        {
+          "title": "Near Miss Trend",
+          "subtitle": "(Last 6 Months)"
+        },
+        {
+          "title": "Top Incident Locations",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Safety Training",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Behaviour Based Safety",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Permit Compliance",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Hazard Reporting",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Top 5 Hazards",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Critical Risk Control Status",
+          "subtitle": "(YTD)"
+        },
+        {
+          "title": "Key Insights",
+          "subtitle": ""
+        }
+      ],
+      "kpis": [
+        {
+          "label": "LTIFR (YTD)",
+          "value": "0.29"
+        },
+        {
+          "label": "TRIFR (YTD)",
+          "value": "0.62"
+        },
+        {
+          "label": "Total Incidents (YTD)",
+          "value": "48"
+        },
+        {
+          "label": "Near Miss (YTD)",
+          "value": "152"
+        },
+        {
+          "label": "Safety Observations (YTD)",
+          "value": "1,245"
+        },
+        {
+          "label": "First Aid Cases (YTD)",
+          "value": "36"
+        },
+        {
+          "label": "Man Hours (YTD)",
+          "value": "18.45 M"
+        }
+      ],
+      "tableHeaders": [
+        "Plant / Shop",
+        "Man Hours (YTD)",
+        "LTIFR",
+        "TRIFR",
+        "Total Incidents",
+        "Near Miss",
+        "Safety Observations",
+        "SIF Events",
+        "Status",
+        "Risk Category",
+        "Total Controls",
+        "Effective",
+        "Partially Effective",
+        "Ineffective"
+      ],
+      "buttons": [],
+      "sidebarActive": "13HSE Performance",
+      "consoleErrors": []
+    },
+    {
+      "order": 15,
+      "slug": "factory-3d",
+      "file": "13-factory-3d",
+      "title": "3D Factory Monitoring",
+      "module": "Spatial Intelligence",
+      "url": "http://localhost:5173/#/d/factory-3d",
+      "screenshots": {
+        "viewport": "13-factory-3d-viewport.png",
+        "full": "13-factory-3d-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Factory Floor — Live 3D",
+          "subtitle": "Click zone · worker · transport to focus"
+        },
+        {
+          "title": "Active Alerts",
+          "subtitle": "(7)"
+        },
+        {
+          "title": "Worker Presence",
+          "subtitle": "Live · click to focus"
+        },
+        {
+          "title": "Logistics Today",
+          "subtitle": ""
+        },
+        {
+          "title": "Active Alerts",
+          "subtitle": "(7)"
+        },
+        {
+          "title": "Logistics Today",
+          "subtitle": ""
+        }
+      ],
+      "kpis": [
+        {
+          "label": "Workers Present",
+          "value": "29"
+        },
+        {
+          "label": "Active Alerts",
+          "value": "6"
+        },
+        {
+          "label": "Zones Over Capacity",
+          "value": "1"
+        },
+        {
+          "label": "Cameras Online",
+          "value": "7/8"
+        },
+        {
+          "label": "WiFi APs Online",
+          "value": "8/8"
+        },
+        {
+          "label": "Avg Idle Time",
+          "value": "0s"
+        }
+      ],
+      "tableHeaders": [],
+      "buttons": [
+        "3D",
+        "Top",
+        "Section",
+        "VR",
+        "RKRamesh KumarE1001 · line-01present",
+        "SDSita DeviE1002 · line-01present",
+        "MYMahesh YadavE1003 · line-02present",
+        "SKSunita KumariE1004 · line-02present",
+        "APAnita PatelE1005 · line-03present",
+        "RSRaju SharmaE1006 · line-03offline",
+        "PKPawan KumarE1007 · line-04present",
+        "NSNeha SinghE1008 · restrictedalert",
+        "KBKiran BhosaleE1009 · line-01present",
+        "VNVijay NaikE1010 · line-04present",
+        "SPSuresh PatilE1011 · line-03present",
+        "MJMeena JoshiE1012 · line-04present",
+        "ARArjun RaoE1013 · line-02present",
+        "DNDeepa NairE1014 · cuttingpresent",
+        "FSFarhan SheikhE1015 · line-01present",
+        "GRGeeta ReddyE1016 · restrictedalert"
+      ],
+      "sidebarActive": "153D Factory Monitoring",
+      "consoleErrors": []
+    },
+    {
+      "order": null,
+      "slug": "settings",
+      "file": "14-settings",
+      "title": "Settings",
+      "module": "Administration",
+      "path": "/settings",
+      "url": "http://localhost:5173/#/settings",
+      "screenshots": {
+        "viewport": "14-settings-viewport.png",
+        "full": "14-settings-full.png"
+      },
+      "documentTitle": "FactoryOS — Intelligent Manufacturing Platform",
+      "cardTitles": [
+        {
+          "title": "Brand Identity",
+          "subtitle": "Shown across the sidebar and every dashboard header"
+        },
+        {
+          "title": "Logo",
+          "subtitle": ""
+        },
+        {
+          "title": "Theme",
+          "subtitle": "Colors apply live across every dashboard"
+        }
+      ],
+      "kpis": [],
+      "tableHeaders": [],
+      "buttons": [
+        "Reset to Default",
+        "Upload Logo",
+        "Remove",
+        "Light",
+        "Dark"
+      ],
+      "sidebarActive": "",
+      "consoleErrors": []
+    }
+  ],
+  "lockedEntries": [
+    "6Inventory",
+    "14Executive Summary"
+  ]
+}

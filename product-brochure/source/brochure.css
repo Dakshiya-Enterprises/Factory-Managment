@@ -1,0 +1,339 @@
+/* ==========================================================================
+   FactoryOS Product Brochure — stylesheet
+   Design tokens mirrored 1:1 from the live application's src/index.css,
+   so the brochure reads as an extension of the product, not a template.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter");
+}
+
+:root {
+  --color-navy-950: #0a1a3a;
+  --color-navy-900: #0d2050;
+  --color-navy-800: #122a66;
+  --color-header-bg: #0d2050;
+
+  --color-brand-blue: #1e56c9;
+  --color-brand-blue-light: #3b7de0;
+
+  --color-status-good: #16a34a;
+  --color-status-good-bg: #e9f8ef;
+  --color-status-warn: #f59e0b;
+  --color-status-warn-bg: #fef4e6;
+  --color-status-bad: #dc2626;
+  --color-status-bad-bg: #fdeaea;
+  --color-status-info: #2563eb;
+  --color-status-info-bg: #eaf1fd;
+  --color-status-purple: #7c3aed;
+  --color-status-purple-bg: #f2ebfd;
+  --color-status-teal: #0d9488;
+  --color-status-teal-bg: #e3f6f4;
+
+  --color-surface: #ffffff;
+  --color-page: #eef1f8;
+  --color-border: #e4e8f2;
+  --color-muted: #64748b;
+  --color-track: #eef1f6;
+
+  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06);
+  --shadow-card-lg: 0 20px 60px rgba(10, 26, 58, 0.28), 0 4px 14px rgba(10, 26, 58, 0.12);
+  --radius-card: 1rem;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 1600px;
+  background: var(--color-page);
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  color: var(--color-navy-950);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   Page scaffold — every page is a fixed 1600x1000 canvas (landscape, matches
+   the dashboard screenshots' 1440:1000 aspect so product shots sit at full
+   fidelity with no letterboxing).
+   ========================================================================== */
+
+.page {
+  width: 1600px;
+  height: 1000px;
+  position: relative;
+  overflow: hidden;
+  background: var(--color-page);
+  page-break-after: always;
+  break-after: page;
+}
+
+.page:last-child { page-break-after: auto; }
+
+.page-number {
+  position: absolute;
+  bottom: 28px;
+  right: 40px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  text-transform: uppercase;
+}
+
+.page-footer-brand {
+  position: absolute;
+  bottom: 28px;
+  left: 40px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.page-footer-brand .dot {
+  width: 6px; height: 6px; border-radius: 999px; background: var(--color-brand-blue);
+}
+
+/* ==========================================================================
+   Cover page
+   ========================================================================== */
+
+.cover {
+  background: linear-gradient(155deg, var(--color-navy-950) 0%, var(--color-navy-900) 55%, #0f2a66 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 72px;
+}
+
+.cover-top { display: flex; align-items: center; justify-content: space-between; }
+
+.cover-logo { display: flex; align-items: center; gap: 14px; }
+.cover-logo-mark {
+  width: 46px; height: 46px; border-radius: 12px; background: var(--color-brand-blue);
+  display: flex; align-items: center; justify-content: center; gap: 3px;
+}
+.cover-logo-mark span { display: block; width: 6px; background: #fff; border-radius: 2px; }
+.cover-logo-mark span:nth-child(1) { height: 14px; }
+.cover-logo-mark span:nth-child(2) { height: 24px; }
+.cover-logo-mark span:nth-child(3) { height: 34px; }
+.cover-logo-text { line-height: 1.15; }
+.cover-logo-text .name { font-size: 18px; font-weight: 800; letter-spacing: 0.01em; }
+.cover-logo-text .tagline { font-size: 10px; font-weight: 700; letter-spacing: 0.14em; color: rgba(255,255,255,0.55); text-transform: uppercase; }
+
+.cover-doc-meta {
+  text-align: right; font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.5);
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+
+.cover-mid { display: flex; align-items: center; gap: 64px; flex: 1; padding-top: 24px; }
+
+.cover-headline { flex: 0 0 540px; }
+.cover-eyebrow {
+  display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--color-brand-blue-light); margin-bottom: 22px;
+  padding: 7px 14px; border: 1px solid rgba(59,125,224,0.45); border-radius: 999px;
+}
+.cover-title { font-size: 56px; font-weight: 800; line-height: 1.04; letter-spacing: -0.01em; }
+.cover-title em { font-style: normal; color: var(--color-brand-blue-light); }
+.cover-subhead {
+  margin-top: 26px; font-size: 17px; line-height: 1.55; color: rgba(255,255,255,0.72); font-weight: 450; max-width: 480px;
+}
+
+.cover-stats { display: flex; gap: 36px; margin-top: 40px; }
+.cover-stat .num { font-size: 30px; font-weight: 800; color: #fff; }
+.cover-stat .label { font-size: 10.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 3px; }
+
+.cover-shot {
+  flex: 1; position: relative; border-radius: 18px; overflow: hidden;
+  box-shadow: var(--shadow-card-lg); border: 1px solid rgba(255,255,255,0.12);
+  transform: perspective(1400px) rotateY(-6deg) rotateX(2deg);
+}
+.cover-shot img { display: block; width: 100%; height: auto; }
+
+.cover-bottom { display: flex; align-items: flex-end; justify-content: space-between; }
+.cover-bottom-left { font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.45); line-height: 1.6; letter-spacing: 0.02em; }
+.cover-bottom-right { display: flex; gap: 28px; }
+.cover-pill { font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.65); }
+
+/* ==========================================================================
+   Section divider page (module transitions)
+   ========================================================================== */
+
+.divider {
+  background: var(--color-navy-950);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 96px;
+  position: relative;
+}
+.divider-index { font-size: 13px; font-weight: 800; letter-spacing: 0.1em; color: var(--color-brand-blue-light); text-transform: uppercase; margin-bottom: 18px; }
+.divider-title { font-size: 48px; font-weight: 800; line-height: 1.08; max-width: 920px; }
+.divider-desc { margin-top: 20px; font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.65); max-width: 680px; }
+.divider-rule { position: absolute; left: 96px; right: 96px; bottom: 120px; height: 1px; background: rgba(255,255,255,0.12); }
+.divider-modules { position: absolute; left: 96px; right: 96px; bottom: 150px; display: flex; gap: 10px; flex-wrap: wrap; }
+.divider-modules span {
+  font-size: 10.5px; font-weight: 700; letter-spacing: 0.04em; color: rgba(255,255,255,0.55);
+  padding: 7px 13px; border: 1px solid rgba(255,255,255,0.15); border-radius: 999px;
+}
+.divider-modules span.active { color: #fff; border-color: var(--color-brand-blue); background: rgba(30,86,201,0.25); }
+
+/* ==========================================================================
+   Standard content page header (used on intro/overview/design-system pages)
+   ========================================================================== */
+
+.content-page { padding: 56px 72px 70px; display: flex; flex-direction: column; height: 100%; }
+.content-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 30px; }
+.content-kicker { font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-brand-blue); }
+.content-title { font-size: 34px; font-weight: 800; letter-spacing: -0.01em; color: var(--color-navy-950); margin-top: 6px; }
+.content-lede { font-size: 14px; color: var(--color-muted); font-weight: 500; max-width: 560px; text-align: right; line-height: 1.55; }
+
+/* ==========================================================================
+   Module showcase pages — three alternating editorial layouts
+   ========================================================================== */
+
+.module-page { padding: 48px 64px 62px; display: flex; flex-direction: column; height: 100%; }
+
+.module-eyebrow-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+.module-eyebrow { display: flex; align-items: center; gap: 10px; }
+.module-eyebrow .badge {
+  font-size: 10.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #fff;
+  background: var(--color-brand-blue); padding: 5px 11px; border-radius: 6px;
+}
+.module-eyebrow .module-name { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted); }
+.module-route { font-size: 11px; font-weight: 600; color: var(--color-muted); font-family: "SF Mono", Menlo, monospace; }
+
+.module-title { font-size: 30px; font-weight: 800; color: var(--color-navy-950); letter-spacing: -0.01em; margin-bottom: 8px; }
+.module-desc { font-size: 13.5px; line-height: 1.6; color: var(--color-muted); font-weight: 500; max-width: 760px; margin-bottom: 20px; }
+
+/* shared screenshot frame — borrows the product's own card radius/shadow */
+.shot-frame {
+  border-radius: 14px; overflow: hidden; box-shadow: var(--shadow-card-lg);
+  border: 1px solid var(--color-border); background: #fff;
+}
+.shot-frame img { display: block; width: 100%; height: auto; }
+
+/* Layout A: wide hero shot top, 3-column feature grid below */
+.layout-a .shot-frame { margin-bottom: 22px; }
+.layout-a .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; flex: 1; }
+
+/* Layout B: split — shot left (wide), text column right */
+.layout-b .split { display: flex; gap: 32px; flex: 1; min-height: 0; }
+.layout-b .split-shot { flex: 1.35; }
+.layout-b .split-text { flex: 1; display: flex; flex-direction: column; gap: 16px; overflow: hidden; }
+
+/* Layout C: shot top (narrower, centered-ish), feature list as numbered editorial rows */
+.layout-c .shot-frame { width: 72%; margin: 0 auto 20px; }
+.layout-c .feature-rows { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 40px; }
+
+.feature {
+  border-top: 2px solid var(--color-brand-blue);
+  padding-top: 10px;
+}
+.feature .num { font-size: 10.5px; font-weight: 800; color: var(--color-brand-blue); letter-spacing: 0.06em; }
+.feature .ftitle { font-size: 13px; font-weight: 800; color: var(--color-navy-950); margin-top: 3px; }
+.feature .fdesc { font-size: 11.5px; line-height: 1.5; color: var(--color-muted); margin-top: 4px; font-weight: 500; }
+
+.side-block { }
+.side-block .label { font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-brand-blue); margin-bottom: 6px; }
+.side-block p, .side-block li { font-size: 12px; line-height: 1.55; color: var(--color-navy-900); font-weight: 500; }
+.side-block.workflow ol { padding-left: 18px; }
+.side-block.workflow li { margin-bottom: 4px; }
+.side-block.value {
+  background: #fff; border: 1px solid var(--color-border); border-radius: 10px; padding: 14px 16px;
+  box-shadow: var(--shadow-card);
+}
+.side-block.kpis { display: flex; flex-wrap: wrap; gap: 8px; }
+.kpi-chip {
+  font-size: 10.5px; font-weight: 700; color: var(--color-navy-900); background: var(--color-track);
+  border-radius: 999px; padding: 5px 11px;
+}
+
+/* ==========================================================================
+   Platform overview — module grid
+   ========================================================================== */
+
+.module-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.module-tile {
+  background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card); padding: 13px 18px; display: flex; flex-direction: column; gap: 5px;
+}
+.module-tile .mnum { font-size: 22px; font-weight: 800; color: var(--color-brand-blue); }
+.module-tile .mtitle { font-size: 13.5px; font-weight: 800; color: var(--color-navy-950); }
+.module-tile .mpages { font-size: 11px; color: var(--color-muted); font-weight: 600; line-height: 1.5; }
+.module-tile.planned { opacity: 0.55; border-style: dashed; }
+.module-tile.planned .mtitle::after { content: " — Planned"; font-weight: 700; color: var(--color-status-warn); }
+
+/* inventory table */
+.inv-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.inv-table th {
+  background: var(--color-header-bg); color: #fff; text-align: left; padding: 8px 10px;
+  font-size: 9.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;
+}
+.inv-table td { padding: 5.5px 10px; border-bottom: 1px solid var(--color-border); color: var(--color-navy-900); font-weight: 500; }
+.inv-table tr:nth-child(even) td { background: #f8fafc; }
+.pill { display: inline-block; font-size: 9.5px; font-weight: 800; padding: 3px 8px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.04em; }
+.pill.live { background: var(--color-status-good-bg); color: var(--color-status-good); }
+.pill.soon { background: var(--color-status-warn-bg); color: var(--color-status-warn); }
+
+/* ==========================================================================
+   Design system page
+   ========================================================================== */
+
+.ds-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; flex: 1; min-height: 0; }
+.swatch-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+.swatch { width: 84px; }
+.swatch .chip { height: 54px; border-radius: 8px; box-shadow: var(--shadow-card); border: 1px solid rgba(0,0,0,0.04); }
+.swatch .hex { font-size: 9.5px; font-weight: 700; margin-top: 5px; color: var(--color-navy-900); font-family: "SF Mono", Menlo, monospace; }
+.swatch .name { font-size: 9px; color: var(--color-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; }
+
+.type-sample { margin-top: 10px; }
+.type-sample .huge { font-size: 30px; font-weight: 800; color: var(--color-navy-950); }
+.type-sample .card-title-sample { font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-navy-950); margin-top: 10px; }
+.type-sample .body-sample { font-size: 12.5px; color: var(--color-navy-900); margin-top: 6px; max-width: 420px; line-height: 1.6; }
+
+.comp-sample { background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius-card); box-shadow: var(--shadow-card); padding: 16px; margin-top: 10px; }
+.badge-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.status-badge { font-size: 10px; font-weight: 800; padding: 3px 9px; border-radius: 6px; }
+.status-badge.good { background: var(--color-status-good-bg); color: var(--color-status-good); }
+.status-badge.warn { background: var(--color-status-warn-bg); color: var(--color-status-warn); }
+.status-badge.bad { background: var(--color-status-bad-bg); color: var(--color-status-bad); }
+.status-badge.info { background: var(--color-status-info-bg); color: var(--color-status-info); }
+
+/* ==========================================================================
+   Workflow page — numbered steps
+   ========================================================================== */
+
+.workflow-steps { display: flex; gap: 0; flex: 1; align-items: stretch; }
+.wstep { flex: 1; position: relative; padding: 0 18px 0 0; }
+.wstep:not(:last-child)::after {
+  content: ""; position: absolute; top: 20px; right: 0; width: 18px; height: 2px; background: var(--color-border);
+}
+.wstep .wnum {
+  width: 34px; height: 34px; border-radius: 999px; background: var(--color-navy-950); color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; margin-bottom: 14px;
+}
+.wstep .wtitle { font-size: 13px; font-weight: 800; color: var(--color-navy-950); margin-bottom: 6px; }
+.wstep .wdesc { font-size: 11.5px; line-height: 1.55; color: var(--color-muted); font-weight: 500; }
+
+/* ==========================================================================
+   Closing page
+   ========================================================================== */
+
+.closing {
+  background: linear-gradient(155deg, var(--color-navy-950) 0%, var(--color-navy-900) 100%);
+  color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 80px;
+}
+.closing-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 36px; }
+.closing-title { font-size: 40px; font-weight: 800; max-width: 760px; line-height: 1.2; }
+.closing-sub { margin-top: 18px; font-size: 14px; color: rgba(255,255,255,0.6); max-width: 560px; line-height: 1.6; font-weight: 500; }
+.closing-meta { margin-top: 48px; display: flex; gap: 40px; }
+.closing-meta div { font-size: 10.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
